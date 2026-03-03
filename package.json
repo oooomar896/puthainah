@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/set-build-time.js && node scripts/netlify-prebuild.js && node ./node_modules/next/dist/bin/next build",
-    "build:netlify": "rm -rf .next && node scripts/set-build-time.js && node scripts/netlify-prebuild.js && node ./node_modules/next/dist/bin/next build",
+    "build": "node scripts/set-build-time.js && node scripts/netlify-prebuild.js",
+    "build:netlify": "rm -rf .next && node scripts/set-build-time.js && node scripts/netlify-prebuild.js",
     "build:simple": "cross-env NEXT_PUBLIC_BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) next build",
     "start": "next start",
     "lint": "eslint .",

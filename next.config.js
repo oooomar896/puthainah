@@ -5,7 +5,7 @@ const nextConfig = {
 
 
   // Standalone output is handled by Netlify plugin v5
-  // output: 'standalone',
+  output: 'standalone',
 
   // Image optimization
   images: {
@@ -71,26 +71,12 @@ const nextConfig = {
     return config;
   },
 
-  // Turbopack configuration (required for Next.js 16+)
-  turbopack: {},
-
   // Experimental features
   experimental: {
     optimizePackageImports: ['lucide-react', 'react-icons'],
-    // Enable MCP (Model Context Protocol) for dynamic development and debugging
-    // MCP is automatically enabled in Next.js 16+ for dev server
-    // This ensures MCP tools are available for real-time error detection and fixes
   },
 
-  // Optimize preloading to reduce warnings
-  // This helps reduce "preloaded but not used" warnings
-  onDemandEntries: {
-    // Period (in ms) where the server will keep pages in the buffer
-    maxInactiveAge: 25 * 1000,
-    // Number of pages that should be kept simultaneously without being disposed
-    pagesBufferLength: 2,
-  },
-
+  trailingSlash: false,
 
   // Redirects for SPA compatibility
   async redirects() {
