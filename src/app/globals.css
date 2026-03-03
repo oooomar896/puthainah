@@ -97,8 +97,8 @@ a {
 
   /* Premium Design System Extensions */
   .glass-card {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    @apply backdrop-blur-md border border-white/20 shadow-xl;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   }
 
   .premium-gradient-primary {
@@ -109,12 +109,8 @@ a {
     background: linear-gradient(135deg, #F3BF45 0%, #d4a02c 100%);
   }
 
-  .premium-gradient-success {
-    background: linear-gradient(135deg, #34d399 0%, #059669 100%);
-  }
-
-  .premium-gradient-warning {
-    background: linear-gradient(135deg, #F3BF45 0%, #D97706 100%);
+  .premium-gradient-luxury {
+    background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 100%);
   }
 
   .premium-shadow {
@@ -126,40 +122,60 @@ a {
   }
 
   @keyframes float {
-    0% {
-      transform: translateY(0px);
-    }
-
-    50% {
-      transform: translateY(-10px);
-    }
-
-    100% {
-      transform: translateY(0px);
-    }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
   }
 
   .shimmer-text {
-    background: linear-gradient(90deg, #1967AE, #60A5FA, #1967AE);
+    background: linear-gradient(90deg, #E2B13C, #F3BF45, #B8860B, #E2B13C);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shimmer 2s linear infinite;
+    animation: shimmer 3s linear infinite;
   }
 
   @keyframes shimmer {
-    to {
-      background-position: 200% center;
-    }
+    to { background-position: 200% center; }
+  }
+
+  /* Grain Texture Effect */
+  .grain-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.03;
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+  }
+
+  /* Reveal Animation Utility */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+
+  .reveal-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Ken Burns Effect for Images */
+  .animate-ken-burns {
+    animation: ken-burns 30s ease infinite alternate;
+  }
+
+  @keyframes ken-burns {
+    0% { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.15) translate(-2%, -2%); }
   }
 
   /* Better Typography */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold tracking-tight;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-black tracking-tight leading-tight;
   }
 }

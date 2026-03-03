@@ -42,8 +42,8 @@ const MobileNavigation = ({ data }) => {
   })();
   // <UserCircle2Icon />
   return (
-    <div className="lg:hidden fixed bottom-0 inset-x-0 bg-white/90 backdrop-blur-lg border-t border-gray-100 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-[1000] pb-safe">
-      <div className="flex justify-between items-center h-[70px] px-6">
+    <div className="lg:hidden fixed bottom-0 inset-x-0 bg-luxuryBlack/90 backdrop-blur-xl border-t border-white/5 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] z-[1000] pb-safe">
+      <div className="flex justify-between items-center h-[76px] px-8">
         {/* Navigation Links */}
         <nav className="flex-1 flex justify-between items-center max-w-sm mx-auto w-full">
           {navLinks?.map((link) => {
@@ -52,14 +52,14 @@ const MobileNavigation = ({ data }) => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`flex flex-col items-center justify-center gap-1.5 transition-all duration-300 w-16 relative py-1
-                ${isActive ? "text-primary -translate-y-1" : "text-gray-400 hover:text-gray-600"}`}
+                className={`flex flex-col items-center justify-center gap-2 transition-all duration-500 w-20 relative py-1
+                ${isActive ? "text-secondary -translate-y-2 scale-110" : "text-gray-500"}`}
               >
                 {isActive && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full shadow-lg shadow-primary/30" />
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-1.5 bg-secondary rounded-b-xl shadow-[0_4px_15px_#E2B13C66]" />
                 )}
 
-                <div className={`p-1.5 rounded-xl transition-all duration-300 ${isActive ? 'bg-primary/10' : 'bg-transparent'}`}>
+                <div className={`p-2 rounded-2xl transition-all duration-500 ${isActive ? 'bg-secondary/10 shadow-[0_0_20px_#E2B13C22]' : 'bg-transparent'}`}>
                   {typeof link.icon === "object" && !React.isValidElement(link.icon) ? (
                     (() => {
                       const srcObj = isActive ? link.iconActive : link.icon;
@@ -68,20 +68,20 @@ const MobileNavigation = ({ data }) => {
                         <OptimizedImage
                           src={src}
                           alt={link.name}
-                          width={22}
-                          height={22}
-                          className={`w-[22px] h-[22px] object-contain transition-transform duration-300 ${isActive ? 'scale-110' : 'scale-100'}`}
+                          width={24}
+                          height={24}
+                          className={`w-[24px] h-[24px] object-contain transition-all duration-500 ${isActive ? 'brightness-125' : 'opacity-60 grayscale'}`}
                         />
                       );
                     })()
                   ) : (
                     React.cloneElement(link.icon, {
-                      size: 22,
-                      className: `transition-transform duration-300 ${isActive ? 'scale-110' : 'scale-100'}`
+                      size: 24,
+                      className: `transition-all duration-500 ${isActive ? 'text-secondary' : 'text-gray-500'}`
                     })
                   )}
                 </div>
-                <span className={`text-[10px] font-medium transition-colors duration-300 ${isActive ? 'text-primary' : 'text-gray-400'}`}>
+                <span className={`text-[10px] font-black uppercase tracking-widest transition-colors duration-500 ${isActive ? 'text-secondary' : 'text-gray-600'}`}>
                   {link.name}
                 </span>
               </Link>
@@ -89,36 +89,36 @@ const MobileNavigation = ({ data }) => {
           })}
 
           {token && imageUrl ? (
-            <Link href="/profile" className={`flex flex-col items-center justify-center gap-1.5 transition-all duration-300 w-16 relative py-1 ${pathname === '/profile' ? "-translate-y-1" : ""}`}>
+            <Link href="/profile" className={`flex flex-col items-center justify-center gap-2 transition-all duration-500 w-20 relative py-1 ${pathname === '/profile' ? "-translate-y-2 scale-110" : ""}`}>
               {pathname === '/profile' && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full shadow-lg shadow-primary/30" />
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-1.5 bg-secondary rounded-b-xl shadow-[0_4px_15px_#E2B13C66]" />
               )}
-              <div className={`p-0.5 rounded-full border-2 transition-all duration-300 ${pathname === '/profile' ? 'border-primary shadow-md shadow-primary/20 scale-110' : 'border-gray-200'}`}>
+              <div className={`p-0.5 rounded-full border-2 transition-all duration-500 ${pathname === '/profile' ? 'border-secondary shadow-[0_0_20px_#E2B13C44]' : 'border-white/10 opacity-60'}`}>
                 <OptimizedImage
                   src={imageUrl}
                   alt="user"
-                  width={28}
-                  height={28}
-                  className="w-7 h-7 object-cover rounded-full"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 object-cover rounded-full"
                 />
               </div>
-              <span className={`text-[10px] font-medium transition-colors duration-300 ${pathname === '/profile' ? 'text-primary' : 'text-gray-400'}`}>
+              <span className={`text-[10px] font-black uppercase tracking-widest transition-colors duration-500 ${pathname === '/profile' ? 'text-secondary' : 'text-gray-600'}`}>
                 حسابي
               </span>
             </Link>
           ) : (
             <Link
               href={"/login"}
-              className={`flex flex-col items-center justify-center gap-1.5 transition-all duration-300 w-16 relative py-1
-                ${pathname === "/login" ? "text-primary -translate-y-1" : "text-gray-400 hover:text-gray-600"}`}
+              className={`flex flex-col items-center justify-center gap-2 transition-all duration-500 w-20 relative py-1
+                ${pathname === "/login" ? "text-secondary -translate-y-2 scale-110" : "text-gray-500"}`}
             >
               {pathname === "/login" && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full shadow-lg shadow-primary/30" />
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-1.5 bg-secondary rounded-b-xl shadow-[0_4px_15px_#E2B13C66]" />
               )}
-              <div className={`p-1.5 rounded-xl transition-all duration-300 ${pathname === "/login" ? 'bg-primary/10' : 'bg-transparent'}`}>
-                <UserCircle2Icon size={22} className={`transition-transform duration-300 ${pathname === "/login" ? 'scale-110' : 'scale-100'}`} />
+              <div className={`p-2 rounded-2xl transition-all duration-500 ${pathname === "/login" ? 'bg-secondary/10 shadow-[0_0_20px_#E2B13C22]' : 'bg-transparent'}`}>
+                <UserCircle2Icon size={24} className={`transition-all duration-500 ${pathname === "/login" ? 'text-secondary' : 'text-gray-500'}`} />
               </div>
-              <span className={`text-[10px] font-medium transition-colors duration-300 ${pathname === "/login" ? 'text-primary' : 'text-gray-400'}`}>
+              <span className={`text-[10px] font-black uppercase tracking-widest transition-colors duration-500 ${pathname === "/login" ? 'text-secondary' : 'text-gray-600'}`}>
                 دخول
               </span>
             </Link>

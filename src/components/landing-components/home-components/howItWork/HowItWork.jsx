@@ -66,38 +66,50 @@ const HowItWork = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full py-24 sm:py-32 bg-white overflow-hidden"
+      className="relative w-full py-24 sm:py-32 bg-luxuryBlack overflow-hidden grain-bg"
       id="how-it-work"
     >
       <div className="container relative z-10">
         {/* Header Section */}
-        <div ref={titleRef} className="text-center space-y-4 mb-20">
-          <span className="text-secondary font-bold tracking-[0.3em] uppercase text-sm">خطوات العمل</span>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-luxuryBlack leading-tight">
+        <div ref={titleRef} className="text-center space-y-6 mb-24">
+          <span className="text-secondary font-black tracking-[0.4em] uppercase text-xs md:text-sm">منهجية العمل</span>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight">
             {t("howItWorks.title")}
           </h2>
+          <div className="w-24 h-[3px] bg-secondary/30 mx-auto rounded-full"></div>
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-center gap-20 lg:gap-32">
           {/* Image Side - Decorative & High-end */}
-          <div ref={imgRef} className="w-full lg:w-1/2 relative">
-            <div className="relative z-10 w-full aspect-square rounded-[60px] overflow-hidden border-8 border-gray-50 shadow-2xl rotate-3 transition-transform duration-700 hover:rotate-0">
+          <div ref={imgRef} className="w-full lg:w-1/2 relative group">
+            <div className="relative z-10 w-full aspect-square rounded-[80px] overflow-hidden border border-white/10 shadow-3xl rotate-2 transition-all duration-700 group-hover:rotate-0 group-hover:scale-105">
               <Image
                 src={howImg}
                 alt="Quality Craftsmanship"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-luxuryBlack/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-luxuryBlack/80 via-transparent to-transparent"></div>
+
+              {/* Overlay Badge */}
+              <div className="absolute top-10 right-10 w-20 h-20 rounded-full bg-secondary/90 backdrop-blur-md flex items-center justify-center animate-bounce shadow-2xl shadow-secondary/20">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-luxuryBlack">
+                  <path d="M12 5v14M5 12h14" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
             </div>
+
             {/* Decorative Background Elements */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-secondary/5 rounded-full blur-[100px] -z-10"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-secondary/5 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+            <div className="absolute -top-10 -left-10 w-40 h-40 border-t-8 border-l-8 border-secondary/10 rounded-tl-[80px] -z-10 transition-all duration-700 group-hover:scale-110"></div>
           </div>
 
           {/* List Side */}
           <div ref={contentRef} className="w-full lg:w-1/2">
-            <HowItWorkList />
+            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-[40px] p-8 md:p-12">
+              <HowItWorkList />
+            </div>
           </div>
         </div>
       </div>
