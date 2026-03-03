@@ -19,62 +19,7 @@ const AboutComponent = () => {
             {t("about.title")}
           </h2>
           <div className="max-w-[750px] text-[#F1F1F1] leading-loose space-y-6">
-            <p>{t("about.intro")}</p>
-
-            <h3 className="font-bold text-lg">{t("about.visionTitle")}</h3>
-            <p>{t("about.visionText")}</p>
-
-            <h3 className="font-bold text-lg">{t("about.missionTitle")}</h3>
-            <p>{t("about.missionText")}</p>
-
-            <h3 className="font-bold text-lg">{t("about.valuesTitle")}</h3>
-            <p>{t("about.valuesText")}</p>
-
-            <h3 className="font-bold text-lg">{t("about.goalsTitle")}</h3>
-            <ul className="list-decimal list-inside space-y-1">
-              {t("about.goals", { returnObjects: true }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-
-            <h3 className="font-bold text-lg">{t("about.whyTitle")}</h3>
-            <p>{t("about.whyIntro")}</p>
-            <ul className="list-decimal list-inside space-y-1">
-              {t("about.whyPoints", { returnObjects: true }).map(
-                (item, index) => (
-                  <li key={index}>{item}</li>
-                )
-              )}
-            </ul>
-
-            <p>{t("about.commitment")}</p>
-
-            <h3 className="font-bold text-lg">{t("about.featuresTitle")}</h3>
-            <ul className="list-disc list-inside space-y-1">
-              {t("about.features", { returnObjects: true }).map(
-                (item, index) => (
-                  <li key={index}>{item}</li>
-                )
-              )}
-            </ul>
-
-            <h3 className="font-bold text-lg">{t("about.fieldsTitle")}</h3>
-            <p className="text-[#F1F1F1]">{t("about.fieldsIntro")}</p>
-            <ul className="list-disc list-inside space-y-1">
-              {t("about.fields", { returnObjects: true }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-
-            <h3 className="font-bold text-lg">{t("about.servicesTitle")}</h3>
-            <p className="text-[#F1F1F1]">{t("about.servicesIntro")}</p>
-            <ul className="list-decimal list-inside space-y-1">
-              {t("about.services", { returnObjects: true }).map(
-                (item, index) => (
-                  <li key={index}>{item}</li>
-                )
-              )}
-            </ul>
+            {/* Detailed sections removed as per user request */}
           </div>
 
           {location.pathname === "/" && (
