@@ -65,7 +65,7 @@ const Services = ({ data, isLoading }) => {
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center space-y-8 mb-24">
           <div ref={titleRef} className="space-y-6">
-            <span className="text-secondary font-black tracking-[0.5em] uppercase text-xs sm:text-sm">خدماتنا الفاخرة</span>
+            <span className="text-secondary font-black tracking-[0.5em] uppercase text-xs sm:text-sm">خدماتنا المتنوعة</span>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight">
               نصنع لك <span className="shimmer-text">التميز</span>
             </h2>
