@@ -80,9 +80,8 @@ const Hero = () => {
                 </div>
 
                 <div ref={textRef}>
-                  <h1 className="text-4xl xs:text-5xl md:text-7xl lg:text-9xl font-black text-white leading-[1.2] md:leading-[1] mb-6 drop-shadow-2xl">
-                    <span className="block mb-2 md:mb-4 opacity-90">{t("hero.title")}</span>
-                    <span className="shimmer-text tracking-tighter inline-block">بثينة سليمان</span>
+                  <h1 className="text-3xl xs:text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.2] md:leading-[1] mb-6 drop-shadow-2xl">
+                    <span className="shimmer-text inline-block">{t("hero.title")}</span>
                   </h1>
                 </div>
 
