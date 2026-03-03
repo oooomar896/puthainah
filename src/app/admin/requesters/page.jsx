@@ -2,16 +2,17 @@
 
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import { DetailPageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
+import { TablePageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
 
-const UsersDetails = dynamic(() => import("@/views/admin/users-details/UsersDetails"), {
-  loading: () => <DetailPageSkeleton />,
+const Requesters = dynamic(() => import("@/views/admin/requesters/Requesters"), {
+  loading: () => <TablePageSkeleton />,
+  ssr: false,
 });
 
-export default function RequesterDetailsPage({ params: _params }) {
+export default function RequestersPage() {
   return (
-    <Suspense fallback={<DetailPageSkeleton />}>
-      <UsersDetails />
+    <Suspense fallback={<TablePageSkeleton />}>
+      <Requesters />
     </Suspense>
   );
 }

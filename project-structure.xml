@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Bakora-Amal-Front-end" type="React-Vite-SPA">
+  <!-- Root Configuration Files -->
+  <item type="file" path="package.json" description="Project dependencies and scripts"/>
+  <item type="file" path="package-lock.json" description="Locked dependency versions"/>
+  <item type="file" path="README.md" description="Project documentation"/>
+  <item type="file" path="index.html" description="Main HTML entry point"/>
+  <item type="file" path="vite.config.js" description="Vite build configuration"/>
+  <item type="file" path="tailwind.config.js" description="Tailwind CSS configuration"/>
+  <item type="file" path="postcss.config.js" description="PostCSS configuration"/>
+  <item type="file" path="eslint.config.js" description="ESLint configuration"/>
+  <item type="file" path="jsconfig.json" description="JavaScript project configuration"/>
+  <item type="file" path="netlify.toml" description="Netlify deployment configuration"/>
+  <item type="file" path="nginx.conf" description="Nginx server configuration"/>
+  
+  <!-- Source Directory -->
+  <item type="directory" path="src" description="Main source code directory"/>
+  
+  <!-- Source Root Files -->
+  <item type="file" path="src/main.jsx" description="React application entry point"/>
+  <item type="file" path="src/App.jsx" description="Main application component with routing"/>
+  <item type="file" path="src/index.css" description="Global CSS styles"/>
+  <item type="file" path="src/i18n.js" description="Internationalization configuration"/>
+  
+  <!-- Context -->
+  <item type="directory" path="src/context" description="React context providers"/>
+  <item type="file" path="src/context/LanguageContext.jsx" description="Language context provider"/>
+  
+  <!-- Locales -->
+  <item type="directory" path="src/locales" description="Translation files"/>
+  <item type="file" path="src/locales/ar.json" description="Arabic translations"/>
+  <item type="file" path="src/locales/en.json" description="English translations"/>
+  
+  <!-- Types -->
+  <item type="directory" path="src/types" description="TypeScript/JSDoc type definitions"/>
+  <item type="file" path="src/types/index.js" description="Core type definitions"/>
+  <item type="file" path="src/types/api.js" description="API request/response types"/>
+  <item type="file" path="src/types/redux.js" description="Redux state types"/>
+  <item type="file" path="src/types/example-usage.js" description="Type usage examples"/>
+  <item type="file" path="src/types/README.md" description="Types documentation"/>
+  
+  <!-- Redux -->
+  <item type="directory" path="src/redux" description="Redux state management"/>
+  <item type="file" path="src/redux/store.js" description="Redux store configuration"/>
+  <item type="directory" path="src/redux/slices" description="Redux slices"/>
+  <item type="file" path="src/redux/slices/authSlice.js" description="Authentication slice"/>
+  <item type="directory" path="src/redux/api" description="RTK Query API endpoints"/>
+  <item type="file" path="src/redux/api/authApi.js" description="Authentication API"/>
+  <item type="file" path="src/redux/api/ordersApi.js" description="Orders API"/>
+  <item type="file" path="src/redux/api/projectsApi.js" description="Projects API"/>
+  <item type="file" path="src/redux/api/servicesApi.js" description="Services API"/>
+  <item type="file" path="src/redux/api/providersApi.js" description="Providers API"/>
+  <item type="file" path="src/redux/api/requestersApi.js" description="Requesters API"/>
+  <item type="file" path="src/redux/api/customersApi.js" description="Customers API"/>
+  <item type="file" path="src/redux/api/ratingsApi.js" description="Ratings API"/>
+  <item type="file" path="src/redux/api/notificationsApi.js" description="Notifications API"/>
+  <item type="file" path="src/redux/api/paymentApi.js" description="Payment API"/>
+  <item type="file" path="src/redux/api/ticketApi.js" description="Tickets API"/>
+  <item type="file" path="src/redux/api/faqsApi.js" description="FAQs API"/>
+  <item type="file" path="src/redux/api/citiesApi.js" description="Cities API"/>
+  <item type="file" path="src/redux/api/partnersApi.js" description="Partners API"/>
+  <item type="file" path="src/redux/api/profileInfoApi.js" description="Profile info API"/>
+  <item type="file" path="src/redux/api/adminStatisticsApi.js" description="Admin statistics API"/>
+  <item type="file" path="src/redux/api/typeApi.js" description="Type API"/>
+  <item type="file" path="src/redux/api/updateApi.js" description="Update API"/>
+  <item type="file" path="src/redux/api/usersDetails.js" description="User details API"/>
+  
+  <!-- Components -->
+  <item type="directory" path="src/components" description="React components"/>
+  
+  <!-- Auth Components -->
+  <item type="file" path="src/components/authGuard.jsx" description="Authentication guard component"/>
+  <item type="file" path="src/components/GuestGuard.jsx" description="Guest route guard"/>
+  <item type="file" path="src/components/TokenRefresher.jsx" description="Token refresh component"/>
+  <item type="file" path="src/components/BackTop.jsx" description="Back to top button"/>
+  
+  <!-- Layouts -->
+  <item type="directory" path="src/components/Layouts" description="Layout components"/>
+  <item type="file" path="src/components/Layouts/LanguageDropdown.jsx" description="Language selector dropdown"/>
+  <item type="file" path="src/components/Layouts/NotificationsModal.jsx" description="Notifications modal"/>
+  
+  <!-- Main Layout -->
+  <item type="directory" path="src/components/Layouts/main-layout" description="Main application layout"/>
+  <item type="file" path="src/components/Layouts/main-layout/MainLayout.jsx" description="Main layout component"/>
+  <item type="directory" path="src/components/Layouts/main-layout/header" description="Header components"/>
+  <item type="file" path="src/components/Layouts/main-layout/header/Header.jsx" description="Main header"/>
+  <item type="file" path="src/components/Layouts/main-layout/header/NavLinks.jsx" description="Navigation links"/>
+  <item type="file" path="src/components/Layouts/main-layout/header/MobileNavigation.jsx" description="Mobile navigation"/>
+  <item type="file" path="src/components/Layouts/main-layout/header/MobileMenu.jsx" description="Mobile menu"/>
+  <item type="file" path="src/components/Layouts/main-layout/header/NotificationButton.jsx" description="Notification button"/>
+  <item type="directory" path="src/components/Layouts/main-layout/footer" description="Footer components"/>
+  <item type="file" path="src/components/Layouts/main-layout/footer/Footer.jsx" description="Main footer"/>
+  
+  <!-- Dashboard Layout -->
+  <item type="directory" path="src/components/Layouts/dashboard-layout" description="Dashboard layout"/>
+  
+  <!-- Admin Layout -->
+  <item type="directory" path="src/components/Layouts/admin-layout" description="Admin panel layout"/>
+  <item type="file" path="src/components/Layouts/admin-layout/AdminLayout.jsx" description="Admin layout component"/>
+  
+  <!-- Landing Components -->
+  <item type="directory" path="src/components/landing-components" description="Landing page components"/>
+  <item type="directory" path="src/components/landing-components/home-components" description="Home page components"/>
+  <item type="directory" path="src/components/landing-components/login-components" description="Login page components"/>
+  <item type="directory" path="src/components/landing-components/signup-components" description="Signup page components"/>
+  <item type="file" path="src/components/landing-components/signup-components/SignupForm.jsx" description="Signup form"/>
+  <item type="file" path="src/components/landing-components/signup-components/SignUpContent.jsx" description="Signup content"/>
+  <item type="directory" path="src/components/landing-components/profile-components" description="Profile page components"/>
+  <item type="file" path="src/components/landing-components/profile-components/welcomeTitle.jsx" description="Welcome title"/>
+  <item type="file" path="src/components/landing-components/profile-components/TicketModal.jsx" description="Ticket modal"/>
+  <item type="file" path="src/components/landing-components/profile-components/Support.jsx" description="Support component"/>
+  <item type="file" path="src/components/landing-components/profile-components/Services.jsx" description="Services component"/>
+  <item type="file" path="src/components/landing-components/profile-components/Mesages.jsx" description="Messages component"/>
+  <item type="file" path="src/components/landing-components/profile-components/ExploreRequests.jsx" description="Explore requests"/>
+  <item type="directory" path="src/components/landing-components/about" description="About page components"/>
+  <item type="directory" path="src/components/landing-components/add-rate" description="Add rate components"/>
+  <item type="directory" path="src/components/landing-components/ExploreRequests" description="Explore requests components"/>
+  <item type="directory" path="src/components/landing-components/request-service" description="Request service components"/>
+  <item type="file" path="src/components/landing-components/request-service/RequestForm.jsx" description="Request form"/>
+  <item type="file" path="src/components/landing-components/request-service/RequestContent.jsx" description="Request content"/>
+  <item type="file" path="src/components/landing-components/request-service/PaymentForm.jsx" description="Payment form"/>
+  <item type="file" path="src/components/landing-components/request-service/CheckoutForm.jsx" description="Checkout form"/>
+  
+  <!-- Admin Components -->
+  <item type="directory" path="src/components/admin-components" description="Admin panel components"/>
+  <item type="directory" path="src/components/admin-components/customers" description="Customer management"/>
+  <item type="directory" path="src/components/admin-components/faqs" description="FAQ management"/>
+  <item type="directory" path="src/components/admin-components/home" description="Admin home"/>
+  <item type="directory" path="src/components/admin-components/partners" description="Partners management"/>
+  <item type="directory" path="src/components/admin-components/projects" description="Projects management"/>
+  <item type="directory" path="src/components/admin-components/providers" description="Providers management"/>
+  <item type="file" path="src/components/admin-components/providers/ProvidersTable.jsx" description="Providers table"/>
+  <item type="directory" path="src/components/admin-components/requesters" description="Requesters management"/>
+  <item type="directory" path="src/components/admin-components/requests" description="Requests management"/>
+  <item type="directory" path="src/components/admin-components/services" description="Services management"/>
+  <item type="directory" path="src/components/admin-components/tickets" description="Tickets management"/>
+  <item type="file" path="src/components/admin-components/tickets/TicketsTable.jsx" description="Tickets table"/>
+  <item type="file" path="src/components/admin-components/tickets/TicketsDetails.jsx" description="Ticket details"/>
+  <item type="directory" path="src/components/admin-components/users-details" description="User details"/>
+  <item type="file" path="src/components/admin-components/users-details/UserData.jsx" description="User data component"/>
+  <item type="file" path="src/components/admin-components/users-details/HeadTitle.jsx" description="User details header"/>
+  
+  <!-- Provider Components -->
+  <item type="directory" path="src/components/provider-components" description="Provider dashboard components"/>
+  <item type="directory" path="src/components/provider-components/active-orders" description="Active orders"/>
+  <item type="file" path="src/components/provider-components/active-orders/OrdersTable.jsx" description="Orders table"/>
+  <item type="directory" path="src/components/provider-components/home-components" description="Provider home"/>
+  <item type="file" path="src/components/provider-components/home-components/new-orders/NewOrders.jsx" description="New orders"/>
+  <item type="directory" path="src/components/provider-components/our-projects" description="Provider projects"/>
+  <item type="file" path="src/components/provider-components/our-projects/ProjectsList.jsx" description="Projects list"/>
+  <item type="directory" path="src/components/provider-components/our-rates" description="Provider rates"/>
+  <item type="file" path="src/components/provider-components/our-rates/RatesList.jsx" description="Rates list"/>
+  
+  <!-- Shared Components -->
+  <item type="directory" path="src/components/shared" description="Shared reusable components"/>
+  <item type="directory" path="src/components/shared/barChart" description="Bar chart component"/>
+  <item type="file" path="src/components/shared/barChart/BarChart.jsx" description="Bar chart"/>
+  <item type="directory" path="src/components/shared/datatable" description="Data table component"/>
+  <item type="file" path="src/components/shared/datatable/DataTable.jsx" description="Data table"/>
+  <item type="directory" path="src/components/shared/forms-end-project" description="End project forms"/>
+  <item type="file" path="src/components/shared/forms-end-project/UploadAdminAttachments.jsx" description="Admin attachments upload"/>
+  <item type="directory" path="src/components/shared/head-title" description="Page header title"/>
+  <item type="file" path="src/components/shared/head-title/HeadTitle.jsx" description="Head title component"/>
+  <item type="directory" path="src/components/shared/numberBg" description="Number background"/>
+  <item type="file" path="src/components/shared/numberBg/NumberBg.jsx" description="Number background component"/>
+  <item type="directory" path="src/components/shared/profile-details" description="Profile details"/>
+  <item type="file" path="src/components/shared/profile-details/UserData.jsx" description="User data"/>
+  <item type="file" path="src/components/shared/profile-details/HeadTitle.jsx" description="Profile header"/>
+  <item type="directory" path="src/components/shared/profile-modal" description="Profile modal"/>
+  <item type="file" path="src/components/shared/profile-modal/ProfileModal.jsx" description="Profile modal component"/>
+  <item type="directory" path="src/components/shared/suspend-modal" description="Suspend modal"/>
+  <item type="file" path="src/components/shared/suspend-modal/SuspendModal.jsx" description="Suspend modal component"/>
+  
+  <!-- Request Service Forms -->
+  <item type="directory" path="src/components/request-service-forms" description="Request service form components"/>
+  <item type="file" path="src/components/request-service-forms/AdminAttachmentForm.jsx" description="Admin attachment form"/>
+  <item type="file" path="src/components/request-service-forms/AdminCompleteRequest.jsx" description="Admin complete request"/>
+  <item type="file" path="src/components/request-service-forms/AttachmentCard.jsx" description="Attachment card"/>
+  <item type="file" path="src/components/request-service-forms/RequestAttachment.jsx" description="Request attachment"/>
+  <item type="file" path="src/components/request-service-forms/RequesterAttachmentForm.jsx" description="Requester attachment form"/>
+  
+  <!-- Pages -->
+  <item type="directory" path="src/pages" description="Page components"/>
+  <item type="file" path="src/pages/LoadingPage.jsx" description="Loading page component"/>
+  
+  <!-- Landing Pages -->
+  <item type="directory" path="src/pages/landing" description="Landing/public pages"/>
+  <item type="file" path="src/pages/landing/home/Home.jsx" description="Landing home page"/>
+  <item type="file" path="src/pages/landing/login/Login.jsx" description="Login page"/>
+  <item type="file" path="src/pages/landing/signup/Signup.jsx" description="Signup page"/>
+  <item type="file" path="src/pages/landing/requestService/RequestService.jsx" description="Request service page"/>
+  <item type="file" path="src/pages/landing/profile/Profile.jsx" description="User profile page"/>
+  <item type="file" path="src/pages/landing/exploreRequests/Explore.jsx" description="Explore requests page"/>
+  <item type="file" path="src/pages/landing/projects/Projects.jsx" description="Projects page"/>
+  <item type="file" path="src/pages/landing/project-details/ProjectUserDetails.jsx" description="Project details page"/>
+  <item type="file" path="src/pages/landing/reviws/Reviews.jsx" description="Reviews page"/>
+  <item type="file" path="src/pages/landing/tickets/Tickets.jsx" description="Tickets page"/>
+  <item type="file" path="src/pages/landing/howItWork/HowItWork.jsx" description="How it works page"/>
+  <item type="file" path="src/pages/landing/about-us/AboutUs.jsx" description="About us page"/>
+  <item type="file" path="src/pages/landing/our-services/OurServices.jsx" description="Our services page"/>
+  
+  <!-- Provider Pages -->
+  <item type="directory" path="src/pages/provider" description="Provider dashboard pages"/>
+  <item type="file" path="src/pages/provider/home/Home.jsx" description="Provider home page"/>
+  <item type="file" path="src/pages/provider/active-orders/ActiveOrders.jsx" description="Active orders page"/>
+  <item type="file" path="src/pages/provider/our-projects/OurProjects.jsx" description="Provider projects page"/>
+  <item type="file" path="src/pages/provider/our-rates/OurRates.jsx" description="Provider rates page"/>
+  <item type="directory" path="src/pages/provider/project-details" description="Provider project details"/>
+  <item type="file" path="src/pages/provider/project-details/ProviderProjectsDetails.jsx" description="Provider project details"/>
+  <item type="file" path="src/pages/provider/project-details/UseCountDown.jsx" description="Countdown hook"/>
+  <item type="file" path="src/pages/provider/project-details/FiveHoursTimer.jsx" description="Five hours timer"/>
+  
+  <!-- Admin Pages -->
+  <item type="directory" path="src/pages/admin" description="Admin panel pages"/>
+  <item type="file" path="src/pages/admin/home/Home.jsx" description="Admin home page"/>
+  <item type="file" path="src/pages/admin/providers/Providers.jsx" description="Providers management page"/>
+  <item type="file" path="src/pages/admin/requesters/Requesters.jsx" description="Requesters management page"/>
+  <item type="file" path="src/pages/admin/requests/Requests.jsx" description="Requests management page"/>
+  <item type="file" path="src/pages/admin/projects/Projects.jsx" description="Projects management page"/>
+  <item type="file" path="src/pages/admin/project-details/ProjectsAdminDetails.jsx" description="Admin project details"/>
+  <item type="file" path="src/pages/admin/request-details/RequestDetails.jsx" description="Request details page"/>
+  <item type="file" path="src/pages/admin/users-details/UsersDetails.jsx" description="User details page"/>
+  <item type="file" path="src/pages/admin/profile-details/ProfileDetails.jsx" description="Profile details page"/>
+  <item type="file" path="src/pages/admin/profile-info/ProfileInfo.jsx" description="Profile info page"/>
+  <item type="file" path="src/pages/admin/services/Services.jsx" description="Services management page"/>
+  <item type="file" path="src/pages/admin/tickets/Tickets.jsx" description="Tickets management page"/>
+  <item type="file" path="src/pages/admin/tickets/TicketDetails.jsx" description="Ticket details page"/>
+  <item type="file" path="src/pages/admin/customers/Customers.jsx" description="Customers page"/>
+  <item type="file" path="src/pages/admin/faqs/Faqs.jsx" description="FAQs page"/>
+  <item type="file" path="src/pages/admin/partners/Partners.jsx" description="Partners page"/>
+  <item type="file" path="src/pages/admin/our-rates/OurRates.jsx" description="Admin rates page"/>
+  
+  <!-- Not Found Page -->
+  <item type="directory" path="src/pages/not-found" description="404 page"/>
+  <item type="file" path="src/pages/not-found/NotFound.jsx" description="Not found page component"/>
+  <item type="file" path="src/pages/not-found/NotFound.css" description="Not found page styles"/>
+  
+  <!-- Assets -->
+  <item type="directory" path="src/assets" description="Static assets"/>
+  <item type="directory" path="src/assets/icons" description="Icon files"/>
+  <item type="file" path="src/assets/icons/active.svg" description="Active icon"/>
+  <item type="file" path="src/assets/icons/activeRequest.svg" description="Active request icon"/>
+  <item type="file" path="src/assets/icons/arrowSeeMore.svg" description="Arrow see more icon"/>
+  <item type="file" path="src/assets/icons/avgRate.svg" description="Average rate icon"/>
+  <item type="file" path="src/assets/icons/block.svg" description="Block icon"/>
+  <item type="file" path="src/assets/icons/bottomArrow.svg" description="Bottom arrow icon"/>
+  <item type="file" path="src/assets/icons/cam.svg" description="Camera icon"/>
+  <item type="file" path="src/assets/icons/completedProjects.svg" description="Completed projects icon"/>
+  <item type="file" path="src/assets/icons/edit.svg" description="Edit icon"/>
+  <item type="file" path="src/assets/icons/emptyStar.svg" description="Empty star icon"/>
+  <item type="file" path="src/assets/icons/enIcon.svg" description="English icon"/>
+  <item type="file" path="src/assets/icons/facebook.svg" description="Facebook icon"/>
+  <item type="file" path="src/assets/icons/fileUpload.svg" description="File upload icon"/>
+  <item type="file" path="src/assets/icons/homeIcon.svg" description="Home icon"/>
+  <item type="file" path="src/assets/icons/homeIconActive.svg" description="Active home icon"/>
+  <item type="file" path="src/assets/icons/insta.svg" description="Instagram icon"/>
+  <item type="file" path="src/assets/icons/join.svg" description="Join icon"/>
+  <item type="file" path="src/assets/icons/linked.svg" description="LinkedIn icon"/>
+  <item type="file" path="src/assets/icons/logout.svg" description="Logout icon"/>
+  <item type="file" path="src/assets/icons/moreabout.svg" description="More about icon"/>
+  <item type="file" path="src/assets/icons/newService.svg" description="New service icon"/>
+  <item type="file" path="src/assets/icons/notifications.svg" description="Notifications icon"/>
+  <item type="file" path="src/assets/icons/paidReciet.svg" description="Paid receipt icon"/>
+  <item type="file" path="src/assets/icons/pendingRequest.svg" description="Pending request icon"/>
+  <item type="file" path="src/assets/icons/Polygon.svg" description="Polygon icon"/>
+  <item type="file" path="src/assets/icons/prevRequests.svg" description="Previous requests icon"/>
+  <item type="file" path="src/assets/icons/projects.svg" description="Projects icon"/>
+  <item type="file" path="src/assets/icons/projectsActive.svg" description="Active projects icon"/>
+  <item type="file" path="src/assets/icons/projectsManage.svg" description="Projects manage icon"/>
+  <item type="file" path="src/assets/icons/projectsManageActive.svg" description="Active projects manage icon"/>
+  <item type="file" path="src/assets/icons/projectsRunning.svg" description="Running projects icon"/>
+  <item type="file" path="src/assets/icons/providers.svg" description="Providers icon"/>
+  <item type="file" path="src/assets/icons/providersActive.svg" description="Active providers icon"/>
+  <item type="file" path="src/assets/icons/rates.svg" description="Rates icon"/>
+  <item type="file" path="src/assets/icons/ratesActive.svg" description="Active rates icon"/>
+  <item type="file" path="src/assets/icons/ratesService.svg" description="Rates service icon"/>
+  <item type="file" path="src/assets/icons/reports.svg" description="Reports icon"/>
+  <item type="file" path="src/assets/icons/reportsActive.svg" description="Active reports icon"/>
+  <item type="file" path="src/assets/icons/requester.svg" description="Requester icon"/>
+  <item type="file" path="src/assets/icons/requesterActive.svg" description="Active requester icon"/>
+  <item type="file" path="src/assets/icons/requestOrders.svg" description="Request orders icon"/>
+  <item type="file" path="src/assets/icons/requestOrdersActive.svg" description="Active request orders icon"/>
+  <item type="file" path="src/assets/icons/s1.svg" description="Service 1 icon"/>
+  <item type="file" path="src/assets/icons/s2.svg" description="Service 2 icon"/>
+  <item type="file" path="src/assets/icons/s3.svg" description="Service 3 icon"/>
+  <item type="file" path="src/assets/icons/sarIcon.svg" description="SAR icon"/>
+  <item type="file" path="src/assets/icons/searchIcon.svg" description="Search icon"/>
+  <item type="file" path="src/assets/icons/seeMore.svg" description="See more icon"/>
+  <item type="file" path="src/assets/icons/selectImg.svg" description="Select image icon"/>
+  <item type="file" path="src/assets/icons/star.svg" description="Star icon"/>
+  <item type="file" path="src/assets/icons/subscripeArrow.svg" description="Subscribe arrow icon"/>
+  <item type="file" path="src/assets/icons/suspend.svg" description="Suspend icon"/>
+  <item type="file" path="src/assets/icons/topArrow.svg" description="Top arrow icon"/>
+  <item type="file" path="src/assets/icons/twitter.svg" description="Twitter icon"/>
+  <item type="file" path="src/assets/icons/youtube.svg" description="YouTube icon"/>
+  
+  <item type="directory" path="src/assets/images" description="Image files"/>
+  <item type="file" path="src/assets/images/bgabout.png" description="About background image"/>
+  <item type="file" path="src/assets/images/hero.jpg" description="Hero image"/>
+  <item type="file" path="src/assets/images/howImg.jpg" description="How it works image"/>
+  <item type="file" path="src/assets/images/joinNow.jpg" description="Join now image"/>
+  <item type="file" path="src/assets/images/logo-landing.png" description="Landing logo"/>
+  <item type="file" path="src/assets/images/logo.png" description="Main logo"/>
+  <item type="file" path="src/assets/images/logoFooter.png" description="Footer logo"/>
+  <item type="file" path="src/assets/images/p1.png" description="Project image 1"/>
+  <item type="file" path="src/assets/images/p2.png" description="Project image 2"/>
+  <item type="file" path="src/assets/images/p3.png" description="Project image 3"/>
+  <item type="file" path="src/assets/images/p4.png" description="Project image 4"/>
+  <item type="file" path="src/assets/images/p5.png" description="Project image 5"/>
+  <item type="file" path="src/assets/images/p6.png" description="Project image 6"/>
+  <item type="file" path="src/assets/images/pdf.png" description="PDF icon"/>
+  <item type="file" path="src/assets/images/signup.png" description="Signup image"/>
+  <item type="file" path="src/assets/images/user.jpg" description="User image"/>
+  <item type="file" path="src/assets/images/userTest.png" description="User test image"/>
+  <item type="file" path="src/assets/react.png" description="React logo"/>
+  
+  <item type="directory" path="src/assets/videos" description="Video files"/>
+  <item type="file" path="src/assets/videos/heroVideo.mp4" description="Hero video"/>
+  
+  <!-- Public Directory -->
+  <item type="directory" path="public" description="Public static files"/>
+  <item type="file" path="public/_redirects" description="Netlify redirects file"/>
+  <item type="file" path="public/vite.png" description="Vite logo"/>
+  <item type="file" path="public/vite2.png" description="Vite logo 2"/>
+  
+  <!-- Build Output -->
+  <item type="directory" path="dist" description="Build output directory"/>
+  <item type="file" path="dist/index.html" description="Built HTML file"/>
+  <item type="file" path="dist/_redirects" description="Built redirects file"/>
+  <item type="directory" path="dist/assets" description="Built assets"/>
+  
+  <!-- Project Metadata -->
+  <metadata>
+    <name>Bakora A'mal Front-end</name>
+    <description>React + Vite single page application for Bakora A'mal platform</description>
+    <framework>React 19.1.0</framework>
+    <buildTool>Vite 6.3.5</buildTool>
+    <styling>Tailwind CSS</styling>
+    <stateManagement>Redux Toolkit</stateManagement>
+    <routing>React Router DOM 7.6.0</routing>
+    <i18n>react-i18next</i18n>
+    <deployment>Netlify</deployment>
+  </metadata>
+</project>
+

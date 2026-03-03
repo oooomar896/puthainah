@@ -1,0 +1,242 @@
+[
+  {
+    "id": "7fbd6741-ade0-4fb1-bedc-04968b846a8e",
+    "name_ar": "خدمة تنفيذ",
+    "name_en": "Execution Service",
+    "base_price": null
+  },
+  {
+    "id": "295bdff1-64e3-434e-8cbc-a67982c2a443",
+    "name_ar": "خدمة توريد",
+    "name_en": "Supply Service",
+    "base_price": null
+  },
+  {
+    "id": "d4bd717d-b988-4536-af54-e558e98a2fb0",
+    "name_ar": "عقود صيانه",
+    "name_en": "Maintenance ConItracts",
+    "base_price": null
+  },
+  {
+    "id": "30c499ad-5c5a-4970-b403-edbcd0fed732",
+    "name_ar": "إستشارة",
+    "name_en": "Consultation",
+    "base_price": null
+  },
+  {
+    "id": "a8db8930-d863-44fe-bb91-ea7bde3f9339",
+    "name_ar": "دراسة مشاريع",
+    "name_en": "Project Study",
+    "base_price": null
+  },
+  {
+    "id": "82c5b20f-8411-4a5a-b483-0942cb57cf48",
+    "name_ar": "تدريب",
+    "name_en": "Training",
+    "base_price": null
+  },
+  {
+    "id": "b8e45611-495e-4ed5-87cf-035dc0daa224",
+    "name_ar": "إدارة مشاريع",
+    "name_en": "Project Management",
+    "base_price": null
+  },
+  {
+    "id": "a7810c9d-1d35-423a-ab5b-1a26ff816b93",
+    "name_ar": "خدمة تنفيذ",
+    "name_en": "Execution Service",
+    "base_price": 0
+  },
+  {
+    "id": "b59d5e98-3077-4c7a-a3c1-707f9cabd499",
+    "name_ar": "خدمة توريد",
+    "name_en": "Supply Service",
+    "base_price": 0
+  },
+  {
+    "id": "ae31c384-d2a3-4669-a2e9-08a3c2a21eae",
+    "name_ar": "عقود صيانه",
+    "name_en": "Maintenance Contracts",
+    "base_price": 0
+  },
+  {
+    "id": "70ab804b-5e0e-4264-b16a-d5a15b205eb8",
+    "name_ar": "إستشارة",
+    "name_en": "Consultation",
+    "base_price": 0
+  },
+  {
+    "id": "e85db100-d769-4df1-a031-7dae9ad096a8",
+    "name_ar": "دراسة مشاريع",
+    "name_en": "Project Study",
+    "base_price": 0
+  },
+  {
+    "id": "a0f29886-6736-4bfa-b47e-2684687d4b8e",
+    "name_ar": "إشراف مشاريع",
+    "name_en": "Project Supervision",
+    "base_price": 0
+  },
+  {
+    "id": "d9ddd6df-1df3-47ed-b3e1-f212d356af25",
+    "name_ar": "تدريب",
+    "name_en": "Training",
+    "base_price": 0
+  },
+  {
+    "id": "5ba997ec-58fe-424d-803f-9e01b2197a15",
+    "name_ar": "إدارة مشاريع",
+    "name_en": "Project Management",
+    "base_price": 0
+  },
+  {
+    "id": "4d763456-3073-4aad-b80d-45ae2ba22e6a",
+    "name_ar": "إستشارة",
+    "name_en": "Consultation",
+    "base_price": 0
+  },
+  {
+    "id": "3b0ac377-bc4c-4b02-9773-5326331290af",
+    "name_ar": "خدمة تنفيذ",
+    "name_en": "Execution Service",
+    "base_price": 0
+  },
+  {
+    "id": "49af8120-a7cf-4bf2-86f8-2b0129c962e3",
+    "name_ar": "خدمة توريد",
+    "name_en": "Supply Service",
+    "base_price": 0
+  },
+  {
+    "id": "ed88739e-a8c3-4a64-901a-8753f0748e71",
+    "name_ar": "عقود صيانه",
+    "name_en": "Maintenance Contracts",
+    "base_price": 0
+  },
+  {
+    "id": "663a5319-d471-4042-92cf-3b7aab0152cd",
+    "name_ar": "إشراف مشاريع",
+    "name_en": "Project Supervision",
+    "base_price": null
+  },
+  {
+    "id": "acc382e9-78b0-44e0-9111-aaf36ca038fc",
+    "name_ar": "خدمة تنفيذ",
+    "name_en": "Execution Service",
+    "base_price": 0
+  },
+  {
+    "id": "b36c584f-a9f3-4aa4-81ff-44ae8cefa659",
+    "name_ar": "خدمة توريد",
+    "name_en": "Supply Service",
+    "base_price": 0
+  },
+  {
+    "id": "cf287a7e-5aa8-448f-bade-26a79c71f299",
+    "name_ar": "عقود صيانه",
+    "name_en": "Maintenance Contracts",
+    "base_price": 0
+  },
+  {
+    "id": "aa2171af-9113-4a3b-afbc-d2c121f566a7",
+    "name_ar": "دراسة مشاريع",
+    "name_en": "Project Study",
+    "base_price": 0
+  },
+  {
+    "id": "2c58ea3b-c358-4445-bf5e-0052d30444f6",
+    "name_ar": "إشراف مشاريع",
+    "name_en": "Project Supervision",
+    "base_price": 0
+  },
+  {
+    "id": "e4a5763d-f3d4-46aa-8af8-ac36327efc95",
+    "name_ar": "تدريب",
+    "name_en": "Training",
+    "base_price": 0
+  },
+  {
+    "id": "a94957dc-39b0-49fb-b628-ff6b93ea0933",
+    "name_ar": "إدارة مشاريع",
+    "name_en": "Project Management",
+    "base_price": 0
+  },
+  {
+    "id": "89ae4e4c-1c63-4007-b06a-346a9a5fd1e6",
+    "name_ar": "خدمة تنفيذ",
+    "name_en": "Execution Service",
+    "base_price": 0
+  },
+  {
+    "id": "8ea55e94-567a-44a4-bf08-97f171385fab",
+    "name_ar": "خدمة توريد",
+    "name_en": "Supply Service",
+    "base_price": 0
+  },
+  {
+    "id": "4257df22-c70a-46cf-8edc-18afaa16668d",
+    "name_ar": "عقود صيانه",
+    "name_en": "Maintenance Contracts",
+    "base_price": 0
+  },
+  {
+    "id": "abc6c3fe-14eb-416a-ae08-5691c5bbd4df",
+    "name_ar": "إستشارة",
+    "name_en": "Consultation",
+    "base_price": 0
+  },
+  {
+    "id": "44a27339-d1ca-4118-8251-5cd84b36923b",
+    "name_ar": "دراسة مشاريع",
+    "name_en": "Project Study",
+    "base_price": 0
+  },
+  {
+    "id": "254882bd-c597-4e45-ace2-91110c268c64",
+    "name_ar": "إشراف مشاريع",
+    "name_en": "Project Supervision",
+    "base_price": 0
+  },
+  {
+    "id": "885e35e8-2d00-4d8f-b206-36e9d9b8956d",
+    "name_ar": "تدريب",
+    "name_en": "Training",
+    "base_price": 0
+  },
+  {
+    "id": "7969c042-dbf8-499e-86d5-d79389b280cc",
+    "name_ar": "إدارة مشاريع",
+    "name_en": "Project Management",
+    "base_price": 0
+  },
+  {
+    "id": "20a9bc81-f9ef-4000-bf26-fccd4330cc3d",
+    "name_ar": "إستشارة",
+    "name_en": "Consultation",
+    "base_price": 0
+  },
+  {
+    "id": "4282f0f6-5721-463f-979e-3e9ff70c6963",
+    "name_ar": "دراسة مشاريع",
+    "name_en": "Project Study",
+    "base_price": 0
+  },
+  {
+    "id": "f0dc2660-06b9-41fe-a051-d434ff7da404",
+    "name_ar": "إشراف مشاريع",
+    "name_en": "Project Supervision",
+    "base_price": 0
+  },
+  {
+    "id": "cd6f1d3e-09c3-4b1b-b1f6-bcdc86c996a4",
+    "name_ar": "تدريب",
+    "name_en": "Training",
+    "base_price": 0
+  },
+  {
+    "id": "bc0a9a0a-ed29-41e1-b2c8-d3c520ffb5f8",
+    "name_ar": "إدارة مشاريع",
+    "name_en": "Project Management",
+    "base_price": 0
+  }
+]

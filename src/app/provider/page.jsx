@@ -4,15 +4,15 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { TablePageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
 
-const ActiveOrders = dynamic(() => import("@/views/provider/active-orders/ActiveOrders"), {
+const TicketsPage = dynamic(() => import("@/views/landing/tickets/Tickets"), {
   loading: () => <TablePageSkeleton />,
   ssr: false,
 });
 
-export default function ActiveOrdersPage() {
+export default function ProviderTicketsPage() {
   return (
     <Suspense fallback={<TablePageSkeleton />}>
-      <ActiveOrders />
+      <TicketsPage />
     </Suspense>
   );
 }

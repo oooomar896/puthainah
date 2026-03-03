@@ -1,24 +1,63 @@
-import ProjectDetailsContent from './ProjectDetailsContent';
+import { createClient } from '@/utils/supabase/server';
+import ProjectsContent from './ProjectsContent';
+import SeekerLayout from '@/components/Layouts/seeker-layout/SeekerLayout';
+import { redirect } from 'next/navigation';
 
-export default async function ProjectDetailsPage({ params }) {
-  const { id } = await params;
-  // const supabase = await createClient();
+export default async function ProjectsPage() {
+  const supabase = await createClient();
 
-  // Fetch project details
-  // Note: Detailed fetch with relations like orderAttachments is complex to replicate fully here without exact query
-  // For now, we pass ID and let the client component fetch full details using the existing API/hook.
-  // We can fetch basic details for SEO/Skeleton if needed.
-  
-  // const { data: project } = await supabase
-  //   .from('orders')
-  //   .select('*')
-  //   .eq('id', id)
-  //   .single();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    redirect('/login?redirect=/projects');
+  }
 
-  // We could potentially pass partial initialData if we shaped it correctly, 
-  // but since the client component relies on a complex shape (attachments, status nameAr/En, etc),
-  // it's safer to let it fetch on client side for now, or implement a comprehensive fetch here.
-  // Given time constraints, passing ID to client component is the robust first step.
+  // Fetch requester details
+  const { data: requester } = await supabase
+    .from('requesters')
+    .select('*')
+    .eq('user_id', user.id)
+    .single();
 
-  return <ProjectDetailsContent id={id} />;
+  let stats = {
+    totalOrdersCount: 0,
+    waitingForApprovalOrdersCount: 0,
+    waitingToStartOrdersCount: 0,
+    ongoingOrdersCount: 0,
+    completedOrdersCount: 0,
+    serviceCompletedOrdersCount: 0,
+    rejectedOrdersCount: 0,
+    expiredOrdersCount: 0,
+  };
+
+  try {
+    const getCount = async (statusId) => {
+      let q = supabase.from("orders").select("*", { count: "exact", head: true });
+      if (requester) q = q.eq('requests.requester_id', requester.id);
+      if (statusId) q = q.eq('order_status_id', statusId);
+      const { count } = await q;
+      return count || 0;
+    };
+
+    stats.totalOrdersCount = await getCount();
+    stats.waitingForApprovalOrdersCount = await getCount(17);
+    stats.waitingToStartOrdersCount = await getCount(18);
+    stats.ongoingOrdersCount = await getCount(13);
+    stats.completedOrdersCount = await getCount(15);
+    stats.serviceCompletedOrdersCount = await getCount(15); // ended/completed same for now
+    stats.rejectedOrdersCount = await getCount(19);
+    stats.expiredOrdersCount = await getCount(20);
+
+  } catch (err) {
+    console.error("Error fetching projects stats:", err);
+  }
+
+  if (requester) {
+    return (
+      <SeekerLayout requester={requester}>
+        <ProjectsContent stats={stats} requesterId={requester.id} />
+      </SeekerLayout>
+    );
+  }
+
+  return <ProjectsContent stats={stats} />;
 }

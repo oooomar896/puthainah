@@ -2,19 +2,17 @@
 
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import { FormPageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
+import { TablePageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
 
-const UpsertCustomer = dynamic(() => import("@/components/admin-components/customers/UpsertCustomer"), {
-  loading: () => <FormPageSkeleton />,
+const TicketsPage = dynamic(() => import("@/views/admin/tickets/Tickets"), {
+  loading: () => <TablePageSkeleton />,
   ssr: false,
 });
 
-export const dynamicParams = true;
-
-export default function AddCustomerPage() {
+export default function AdminTicketsPage() {
   return (
-    <Suspense fallback={<FormPageSkeleton />}>
-      <UpsertCustomer />
+    <Suspense fallback={<TablePageSkeleton />}>
+      <TicketsPage />
     </Suspense>
   );
 }

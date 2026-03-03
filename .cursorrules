@@ -1,0 +1,27 @@
+# Cursor Rules for Bacura Amal Frontend
+
+## MCP (Model Context Protocol) Configuration
+
+### Next.js MCP Tools
+- Use `nextjs_index` to discover running Next.js dev servers
+- Use `nextjs_call` to get real-time errors, routes, and diagnostics
+- Use `nextjs_docs` for ALL Next.js documentation queries (mandatory)
+- Use `browser_eval` for browser automation and testing
+
+### Development Workflow
+1. Always start dev server: `npm run dev`
+2. Use MCP tools to monitor errors and routes dynamically
+3. Fix issues in real-time without restarting server
+4. Use browser automation to verify fixes
+
+### Supabase MCP Tools
+- Use Supabase MCP tools for database operations
+- Check advisors regularly for security and performance issues
+- Use migrations for schema changes
+
+### Dynamic Problem Solving
+- Monitor errors continuously using `nextjs_call` with error diagnostics
+- Fix issues immediately when detected
+- Verify fixes using browser automation
+- No need to wait for manual error detection
+

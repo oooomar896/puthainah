@@ -1,0 +1,93 @@
+{
+  "name": "bacura",
+  "private": true,
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=20.9.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/set-build-time.js && node scripts/netlify-prebuild.js && node ./node_modules/next/dist/bin/next build",
+    "build:netlify": "rm -rf .next && node scripts/set-build-time.js && node scripts/netlify-prebuild.js && node ./node_modules/next/dist/bin/next build",
+    "build:simple": "cross-env NEXT_PUBLIC_BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "preview": "next start",
+    "seed:supabase": "node scripts/seed-supabase-users.mjs",
+    "test:e2e:ui": "npx playwright test tests/e2e/upload.spec.mjs"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@sahabaplus/moyasar": "^0.2.5",
+    "@stripe/react-stripe-js": "^3.8.1",
+    "@stripe/stripe-js": "^7.7.0",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.89.0",
+    "@szhsin/react-accordion": "^1.4.1",
+    "axios": "^1.9.0",
+    "dayjs": "^1.11.13",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.14.2",
+    "i18next": "^25.3.2",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "lodash.debounce": "^4.0.8",
+    "lucide-react": "^0.522.0",
+    "nodemailer": "^7.0.12",
+    "react": "^19.2.3",
+    "react-data-table-component": "^7.7.0",
+    "react-dom": "^19.2.3",
+    "react-hot-toast": "^2.5.2",
+    "react-i18next": "^15.6.1",
+    "react-icons": "^5.5.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-redux": "^9.2.0",
+    "react-select": "^5.10.1",
+    "recharts": "^3.0.0",
+    "sonner": "^1.7.1",
+    "stripe": "^20.1.0",
+    "swiper": "^11.2.8",
+    "tailwindcss-dir": "^4.0.0",
+    "tailwindcss-rtl": "^0.9.0",
+    "yup": "^1.6.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@netlify/plugin-nextjs": "^5.15.3",
+    "@types/js-cookie": "^3.0.6",
+    "@types/lodash.debounce": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "autoprefixer": "^10.4.21",
+    "bmad-method": "^4.44.3",
+    "eslint": "^9.25.0",
+    "eslint-config-next": "^15.1.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^16.0.0",
+    "next": "^16.1.1",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "safari >= 11",
+      "ios >= 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

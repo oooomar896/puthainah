@@ -1,0 +1,1130 @@
+{
+  "question": {
+    "faqTitle": "Frequently Asked Questions",
+    "questionLabel": "Question",
+    "questionPlaceholder": "Enter the question",
+    "answerLabel": "Answer",
+    "answerPlaceholder": "Enter the answer",
+    "deleteButton": "Delete",
+    "addQuestionButton": "Add Another Question",
+    "saveButton": "Save",
+    "submitting": "Submitting...",
+    "successMessage": "Added successfully",
+    "errorMessage": "An error occurred while adding",
+    "validation": {
+      "questionRequired": "Question is required",
+      "answerRequired": "Answer is required"
+    },
+    "faqManagement": "FAQ Management",
+    "addQuestion": "Add Question",
+    "question": "Question",
+    "answer": "Answer",
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteSuccess": "Question deleted successfully",
+    "deleteError": "An error occurred while deleting",
+    "deleteConfirmationTitle": "Are you sure you want to delete the question?",
+    "confirmDelete": "Delete",
+    "cancel": "Cancel",
+    "deleting": "Deleting...",
+    "editQuestion": "Edit Question",
+    "save": "Save",
+    "saving": "Saving...",
+    "updateSuccess": "Updated successfully",
+    "updateError": "An error occurred during update",
+    "loadingData": "Loading data..."
+  },
+  "partners": {
+    "titlePage": "Our Partners",
+    "description": "Here you can manage and view all platform partners",
+    "titleHero": "Partners",
+    "addPartner": "Add Partner",
+    "partnerName": "Partner Name",
+    "partnerNamePlaceholder": "Enter partner name",
+    "image": "Image",
+    "submit": "Save",
+    "submitting": "Submitting...",
+    "addSuccess": "Partner added successfully",
+    "addError": "An error occurred while adding",
+    "validation": {
+      "nameRequired": "Partner name is required",
+      "imageRequired": "Image is required"
+    },
+    "modalDelete": {
+      "title": "Are you sure you want to delete the partner?",
+      "delete": "Delete",
+      "deleting": "Deleting...",
+      "cancel": "Cancel"
+    },
+    "title": "Partners Management",
+    "name": "Name",
+    "actions": "Actions",
+    "deleteSuccess": "Partner deleted successfully",
+    "deleteError": "An error occurred while deleting",
+    "upsertPartner": {
+      "titleAdd": "Add Partner",
+      "titleEdit": "Edit Partner",
+      "partnerName": "Partner Name",
+      "enterPartnerName": "Enter partner name",
+      "image": "Image",
+      "save": "Save",
+      "saving": "Saving...",
+      "successAdd": "Partner added successfully",
+      "successUpdate": "Partner updated successfully",
+      "error": "An error occurred, please try again",
+      "imageRequired": "Image is required",
+      "nameRequired": "Partner name is required",
+      "loading": "Loading data..."
+    }
+  },
+  "projects": {
+    "pageTitle": "Project Management",
+    "pageDescription": "Here you can find all projects related to service requesters",
+    "projectDetailsTitle": "Project Details No.",
+    "projectManagement": "Project Management",
+    "projectDetails": "Project Details",
+    "projectAttachments": "Project Attachments",
+    "requesterAttachments": "Requester Attachments",
+    "attachments": "Attachments",
+    "action": "Action",
+    "preview": "Preview",
+    "orderDescription": "Order Description",
+    "orderNumber": "Order Number",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "userNotes": "Requester Notes",
+    "servicePrice": "Service Price",
+    "serviceType": "Service Type",
+    "requester": "Requester",
+    "provider": "Provider",
+    "orderStatus": "Order Status",
+    "all": "All",
+    "waitingApproval": "Waiting for Approval",
+    "waitingStart": "Waiting to Start",
+    "processing": "Processing",
+    "completed": "Completed",
+    "ended": "Ended",
+    "rejected": "Rejected",
+    "expired": "Expired",
+    "viewOrder": "View Order",
+    "confirmRequest": "Confirm Request",
+    "providerLabel": "Service Provider",
+    "providerPlaceholder": "Select a service provider",
+    "submit": "Confirm",
+    "submitting": "Submitting...",
+    "successMessage": "Operation completed successfully",
+    "errorMessage": "An error occurred during the operation",
+    "providerRequired": "Service provider is required",
+    "stats": {
+      "total": "Total Projects",
+      "ongoing": "Ongoing Projects",
+      "completed": "Completed Projects",
+      "rejected": "Rejected Projects"
+    }
+  },
+  "providersTable": {
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "pending": "Pending Review",
+      "suspended": "Suspended",
+      "blocked": "Blocked"
+    },
+    "columns": {
+      "name": "Name",
+      "entityType": "Entity Type",
+      "email": "Email",
+      "phone": "Phone Number",
+      "region": "Region",
+      "status": "Account Status",
+      "action": "Action",
+      "view": "View"
+    }
+  },
+  "requestersTable": {
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "pending": "Pending Review",
+      "suspended": "Suspended",
+      "blocked": "Blocked"
+    },
+    "columns": {
+      "name": "Name",
+      "entityType": "Entity Type",
+      "email": "Email",
+      "phone": "Phone Number",
+      "region": "Region",
+      "status": "Account Status",
+      "action": "Action",
+      "view": "View"
+    }
+  },
+  "request": {
+    "name": "Name",
+    "registrationDate": "Registration Date",
+    "price": "Price",
+    "requestDescription": "Request Description",
+    "notes": "notes:",
+    "all": "All",
+    "newRequest": "New Request",
+    "underProcessing": "Under Processing",
+    "initialApproval": "Initial Approval",
+    "awaitingPayment": "Awaiting Payment",
+    "rejected": "Rejected",
+    "completed": "Completed",
+    "requestNumber": "Request Number",
+    "requesterName": "Requester Name",
+    "requestDate": "Request Date",
+    "requestStatus": "Request Status",
+    "viewRequest": "View Request",
+    "action": "Action"
+  },
+  "services": {
+    "title": "Quality integrated services... Request your service now",
+    "description": "We serve you in all low current systems including supply, installation, programming, maintenance, consulting, and training.",
+    "serviceTitle": "Service Title",
+    "price": "Price",
+    "status": "Status",
+    "actions": "Actions",
+    "edit": "Edit",
+    "update_price": "Update Price",
+    "enter_new_price": "Enter new price",
+    "update": "Update",
+    "back": "Back",
+    "toast_invalid_price": "Please enter a valid price",
+    "toast_success_update": "Price updated successfully",
+    "toast_error_update": "An error occurred while updating the price"
+  },
+  "tickets": {
+    "title": "Manage Complaints",
+    "description": "Here you can find the requests you have been nominated to handle based on your specialization",
+    "ticket_details": "Ticket Details",
+    "closing_ticket": "Closing...",
+    "opening_ticket": "Opening...",
+    "close_ticket": "Close Ticket",
+    "reopen_ticket": "Reopen Ticket",
+    "user_name": "User Name",
+    "ticket_status": "Ticket Status",
+    "ticket_title": "Ticket Title",
+    "ticket_description": "Ticket Description",
+    "no_description": "No description available",
+    "username": "User Name",
+    "complaint_title": "Complaint Title",
+    "complaint_status": "Complaint Status",
+    "view": "View",
+    "action": "Action"
+  },
+  "user": {
+    "name": "Name",
+    "email": "Email",
+    "phone_number": "Phone Number",
+    "registration_date": "Registration Date",
+    "commercial_registration": "Commercial Registration",
+    "commercial_registration_confirmation_date": "Annual CR Confirmation Date",
+    "entity_type": "Entity Type",
+    "city": "Work Area",
+    "block": "Block",
+    "activate": "Activate",
+    "user_blocked_success": "User blocked successfully!",
+    "user_activated_success": "User activated successfully!"
+  },
+  "about": {
+    "metaTitle": "About Us - Learn About Our Vision and Goals",
+    "metaDescription": "Discover more about our mission, values, and services at our platform dedicated to delivering excellence.",
+    "title": "Who We Are – Buthaina Platform",
+    "intro": "A Saudi digital platform dedicated to excellence in interior design and luxury furniture manufacturing. We serve government and commercial sectors with innovative design solutions, high-quality production, and professional project management, committed to elegance and international standards.",
+    "visionTitle": "Our Vision:",
+    "visionText": "To lead nationally in low-current system contracting by enhancing the efficiency and quality of projects according to international standards, in support of Saudi Vision 2030.",
+    "missionTitle": "Our Mission:",
+    "missionText": "Smart and safe technological quality of life.",
+    "valuesTitle": "Our Values:",
+    "valuesText": "Trust and lasting quality, development, and high satisfaction.",
+    "goalsTitle": "Our Goals:",
+    "goals": [
+      "Enhance the efficiency and quality of government and commercial projects with global standards.",
+      "Empower national talents and create job opportunities for them.",
+      "Provide innovative services that enhance customer satisfaction and loyalty.",
+      "Raise community awareness of the importance of smart technological solutions.",
+      "Develop local products that can compete in global markets."
+    ],
+    "whyTitle": "Why We Launched Buthaina Platform:",
+    "whyIntro": "Driven by our belief in partnership with government and commercial entities, and recognizing the market need, we launched the platform for the following reasons:",
+    "whyPoints": [
+      "The workload in this sector is increasing with Vision 2030.",
+      "Low-current systems are essential in most projects.",
+      "Reduce costs and ease the burden on establishments.",
+      "Lack of experience among some subcontractors.",
+      "Specialization and professionalism are top priorities.",
+      "Quick response is required in many services.",
+      "Professional standards and commitments ensure quality execution."
+    ],
+    "commitment": "We are committed to achieving efficiency, productivity, and cost and risk reduction through innovative solutions and high standards.",
+    "featuresTitle": "Platform Features:",
+    "features": [
+      "Cost reduction (money, time, effort).",
+      "Integrated services (diagnosis, supply, installation, programming, maintenance, consulting, etc.).",
+      "Fast service delivery and after-sales support.",
+      "Wholesale pricing for procurements.",
+      "Clear guarantees and commitments on all services.",
+      "Complete privacy and security for sensitive services."
+    ],
+    "fieldsTitle": "Fields of Work:",
+    "fieldsIntro": "We offer a range of fields in low-current systems including products, services, and technical, smart, and security solutions:",
+    "fields": [
+      "Surveillance camera systems.",
+      "Wired and wireless network and communication systems.",
+      "Smart control and IoT systems.",
+      "Burglar alarm systems.",
+      "PBX and biometric systems.",
+      "Electronic locks.",
+      "CCTV systems.",
+      "Security gate systems.",
+      "Sound systems.",
+      "Solar energy systems.",
+      "Energy-saving systems (UPS).",
+      "Electric vehicle chargers."
+    ],
+    "servicesTitle": "Our Services:",
+    "servicesIntro": "Services vary according to the request and needs of government and commercial establishments. In an effort to find distinctive services and innovative solutions that reduce costs and relieve burdens on our success partners, we offer the following services:",
+    "services": [
+      "Wholesale procurement supply.",
+      "Professional execution of project contracts and after-sales services.",
+      "General and periodic maintenance contracts.",
+      "Diagnosis of low-current systems projects by specialists.",
+      "Project supervision and management from start to delivery.",
+      "Managing low-current projects department for government and commercial entities.",
+      "Consultations by expert specialists.",
+      "Training for engineers, technicians, and administrators."
+    ],
+    "more": "More About Buthaina Platform"
+  },
+  "review": {
+    "add_review": "Add Review",
+    "write_review_placeholder": "Write your review here...",
+    "submit": "Submit",
+    "back": "Back",
+    "review_success": "Thank you for your product review",
+    "review_error": "An error occurred while submitting your review"
+  },
+  "requestsUser": {
+    "my_requests": "My Requests",
+    "request_number": "Request Number",
+    "requester_name": "Requester Name",
+    "request_date": "Request Date",
+    "request_status": "Request Status",
+    "view_request": "View Request",
+    "status_all": "All",
+    "status_new": "New Request",
+    "status_processing": "Under Processing",
+    "status_initial_approval": "Initial Approval",
+    "status_waiting_payment": "Waiting for Payment",
+    "status_rejected": "Rejected",
+    "status_completed": "Completed",
+    "action": "Action"
+  },
+  "faq": "FAQ",
+  "hero": {
+    "title": "Buthaina Platform - Luxury Design",
+    "registerNow": "Register Now",
+    "requestService": "Request a Service",
+    "seeMore": "See More"
+  },
+  "howItWorks": {
+    "metaDescription": "Learn how to use the platform to request services easily and quickly through clear and simple steps.",
+    "title": "How does the platform work?",
+    "step1": "Create your account",
+    "step2": "Submit your requests",
+    "step3": "Track your requests and receive a report for each one",
+    "requestService": "Request Service",
+    "subscribeNow": "Subscribe Now"
+  },
+  "join": {
+    "title": "Join us as a service requester",
+    "description": "For governmental and commercial entities; we are honored to fulfill your requests with high professionalism. We serve all low current systems including supply, installation, programming, maintenance, consultation, and training.",
+    "request": "Request Service",
+    "signup": "Sign Up"
+  },
+  "loginContent": {
+    "welcome": "Welcome back to Buthaina Platform",
+    "subtitle": "Log in to access your account, track your requests, and execute projects.",
+    "description": "We provide you with a secure and smooth experience to manage your services and execute your projects with confidence."
+  },
+  "loginForm": {
+    "welcome": "Welcome to",
+    "brand": "Buthaina Platform",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create Account",
+    "loginTitle": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "loggingIn": "Logging in...",
+    "errors": {
+      "network": "Network connection lost. Please try again later.",
+      "invalidCredentials": "Invalid email or password",
+      "timeout": "Request timed out. Please retry.",
+      "unknownError": "An unknown error occurred. Please try again.",
+      "sessionError": "Failed to establish user session. Please try again.",
+      "roleNotFound": "Failed to determine user role. Please try again.",
+      "unknownRole": "Unknown user role. Redirecting to home.",
+      "emailNotConfirmed": "Email not confirmed. Please check your inbox and verify your email.",
+      "unauthorized": "Unauthorized. Please check your credentials or try again later.",
+      "providerPending": "Your account is pending review by admin. You will receive an email once approved.",
+      "accountBlocked": "Your account has been suspended by admin. Please contact support."
+    },
+    "validation": {
+      "invalidEmail": "Invalid email address",
+      "required": "Required",
+      "passwordMin": "Password must be at least 6 characters"
+    }
+  },
+  "loginForm.resendActivation": "Resend activation link",
+  "loginForm.activationLinkSent": "Activation link sent to your email",
+  "loginForm.enterEmailFirst": "Enter your email first",
+  "exploreRequests": {
+    "pageTitle": "Explore Requests",
+    "columns": {
+      "projectName": "Project Name",
+      "serviceType": "Service Type",
+      "requestDate": "Request Date",
+      "status": "Status"
+    },
+    "status": {
+      "new": "New",
+      "old": "Old",
+      "other": "Other"
+    }
+  },
+  "messages": {
+    "title": "Latest Messages",
+    "noMessages": "No messages available",
+    "goToMessages": "Go to Messages"
+  },
+  "servicesLanding": {
+    "title": "Services",
+    "items": [
+      {
+        "title": "Request New Service",
+        "description": "Submit a new request easily and let us deliver it to the right people"
+      },
+      {
+        "title": "Previous Requests",
+        "description": "Track the status of your previous requests"
+      },
+      {
+        "title": "Ongoing Projects",
+        "description": "Browse accepted projects that are currently in progress"
+      },
+      {
+        "title": "Reviews",
+        "description": "View your reviews of completed projects"
+      }
+    ]
+  },
+  "support": {
+    "title": "Technical Support & Help",
+    "description": "Have questions? Our support team is here to help.",
+    "whatsapp": "WhatsApp",
+    "submitComplaint": "Submit a Complaint",
+    "email": "Email us at:"
+  },
+  "ticket": {
+    "pageTitle": "Messages & Support",
+    "pageDescription": "Speed ​​of response is a value we are proud of; send your comment and we will contact you immediately.",
+    "listTitle": "Messages List",
+    "sendTicket": "Submit Complaint",
+    "noTicketsTitle": "No messages yet",
+    "noTicketsDescription": "You can send a new complaint using the button above",
+    "title": "Submit a Complaint",
+    "form": {
+      "title": "Complaint Title",
+      "titlePlaceholder": "Enter the complaint title",
+      "description": "Complaint Description",
+      "descriptionPlaceholder": "Enter the complaint details"
+    },
+    "submit": "Submit",
+    "sending": "Sending...",
+    "cancel": "Cancel",
+    "success": "Complaint submitted successfully",
+    "error": "An error occurred while submitting the complaint",
+    "errors": {
+      "titleRequired": "Complaint title is required",
+      "descriptionRequired": "Complaint description is required"
+    }
+  },
+  "profile": {
+    "dashboard": "Dashboard",
+    "suspendAccount": "Suspend My Account",
+    "stats": {
+      "totalOrders": "Total Orders",
+      "waitingApproval": "Waiting for Approval",
+      "waitingStart": "Waiting to Start",
+      "ongoing": "Ongoing Orders",
+      "completed": "Completed Orders",
+      "servicesCompleted": "Services Completed"
+    },
+    "providerDetails": "Service Provider Details",
+    "requesterDetails": "Service Requester Details",
+    "adminDetails": "Admin Details",
+    "providerNav": "Manage Service Providers",
+    "requesterNav": "Manage Service Requesters",
+    "adminNav": "Dashboard",
+    "welcome": "Welcome, {{name}}",
+    "editData": "Edit Profile",
+    "subtitle": "Browse service requests or track your ongoing projects below.",
+    "joinedSince": "Joined since: {{date}}",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "address": "City / Address",
+    "institutionType": "Institution Type",
+    "crNumber": "Commercial Registration Number",
+    "crDate": "Commercial Registration Date",
+    "attachments": "Upload Attachments",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "cameraPreview": "Camera Preview",
+    "captureImage": "Capture Image",
+    "selectCity": "Select City",
+    "selectType": "Select Type",
+    "requiredFullName": "Full name is required",
+    "requiredEmail": "Email is required",
+    "invalidEmail": "Invalid email address",
+    "requiredPhone": "Phone number is required",
+    "requiredAddress": "Address is required",
+    "requiredInstitution": "Institution type is required",
+    "cameraAccessFailed": "Failed to access the camera",
+    "unknownUserRole": "Unknown user role",
+    "profileUpdateSuccess": "Profile updated successfully",
+    "profileUpdateFailed": "An error occurred during update"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "projectName": "Project Name",
+    "clientName": "Client Name",
+    "rating": "Rating (Stars)",
+    "notes": "Client Notes"
+  },
+  "payment": {
+    "success": "Order created and payment successful",
+    "processing": "Processing...",
+    "payNow": "Pay Now",
+    "failed": "Order creation or payment failed",
+    "notConfirmed": "Payment not confirmed yet.",
+    "succeeded": "Payment completed successfully",
+    "stripeError": "An error occurred creating the payment intent"
+  },
+  "signup": {
+    "title": "Create a new account at Buthaina Platform",
+    "titleProvider": "Join as a Success Partner (Service Provider)",
+    "description1": "Create a new account to access our services, track your requests, and execute your projects.",
+    "descriptionProvider": "Contribute with us in executing high-quality projects and expand your business horizons.",
+    "description2": "We provide you with a secure and smooth experience to manage your services and execute your projects with confidence.",
+    "descriptionSecondaryProvider": "We provide you with an integrated platform to manage your offers and projects smoothly and professionally."
+  },
+  "signupForm": {
+    "welcome": "Welcome to",
+    "appName": "Buthaina Platform",
+    "haveAccount": "Already have an account",
+    "login": "Login",
+    "title": "Create Account",
+    "fullName": "Entity Name",
+    "fullNamePlaceholder": "Full Name",
+    "entityType": "Entity Type",
+    "entityTypePlaceholder": "Select Entity Type",
+    "email": "Email",
+    "emailPlaceholder": "Email Address",
+    "phone": "Phone Number",
+    "region": "Work Region",
+    "regionPlaceholder": "Select Region",
+    "commercialRecord": "Commercial Record",
+    "commercialRecordPlaceholder": "Commercial Record",
+    "commercialDate": "Annual Confirmation Date of Commercial Record",
+    "password": "Password",
+    "passwordPlaceholder": "Password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm Password",
+    "uploadAttachments": "Upload Attachments",
+    "uploadProfilePicture": "Upload Profile Picture",
+    "agreeToTerms": "I agree to the",
+    "terms": "terms and conditions",
+    "specialization": "Specialization / Field of Work",
+    "specializationPlaceholder": "e.g., Camera Systems, Networking, Solar Energy...",
+    "bio": "Bio / Services Description",
+    "bioPlaceholder": "Briefly describe the services your entity provides...",
+    "submitProvider": "Register as Provider",
+    "submitRequester": "Register as Requester",
+    "submitting": "Submitting...",
+    "registerSuccess": "Registration and file upload successful. Please login.",
+    "registerError": "An error occurred during registration. Please check your data.",
+    "validation": {
+      "phoneInvalid": "invalid phone number",
+      "fullNameRequired": "Full name is required",
+      "entityTypeRequired": "Entity type is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "phoneRequired": "Phone number is required",
+      "regionRequired": "Region is required",
+      "commercialRecordRequired": "Commercial record is required",
+      "commercialDateRequired": "Commercial registration date is required",
+      "passwordRequired": "Password is required",
+      "passwordShort": "Password is too short",
+      "confirmPasswordRequired": "Confirm password is required",
+      "confirmPasswordMismatch": "Passwords do not match",
+      "agreeRequired": "You must agree to the terms and conditions",
+      "specializationRequired": "Specialization is required",
+      "bioRequired": "Bio is required"
+    }
+  },
+  "signupForm.companyName": "Entity Name",
+  "signupForm.companyNamePlaceholder": "Entity Name",
+  "header": {
+    "goodMorning": "Good morning",
+    "role": "Admin",
+    "logout": "Logout",
+    "serviceProvider": "Service Provider"
+  },
+  "navSeeker": {
+    "home": "Home",
+    "postRequest": "New Request",
+    "explore": "My Requests",
+    "support": "Support Tickets",
+    "serviceSeeker": "Service Seeker"
+  },
+  "nav": {
+    "home": "Home",
+    "providers": "Providers",
+    "requesters": "Requesters",
+    "requests": "Requests",
+    "projects": "Projects",
+    "rates": "Ratings",
+    "services": "Services",
+    "tickets": "technical support",
+    "faqs": "FAQs",
+    "partners": "Partners",
+    "customers": "Customers",
+    "admin": "Admin"
+  },
+  "navProvider": {
+    "home": "Home",
+    "availableOrders": "Available Orders",
+    "myProjects": "My Projects",
+    "myRatings": "My Ratings",
+    "reports": "technical support",
+    "serviceProvider": "Service Provider"
+  },
+  "profileInfo": {
+    "submit": "submit",
+    "uploading": "uploading..."
+  },
+  "footer": {
+    "profile": "profile-info",
+    "importantLinks": "Important Links",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "howItWorks": "How It Works",
+    "faq": "FAQs",
+    "joinAsProvider": "Join as Service Provider",
+    "cookies": "Cookie Settings",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "rights": "© 2025 Buthaina Platform. All rights reserved.",
+    "lastUpdate": "Last Update"
+  },
+  "headerLanding": {
+    "about": "About Us",
+    "services": "Our Services",
+    "faq": "FAQs",
+    "support": "Support",
+    "requestService": "Request Service",
+    "logout": "Logout",
+    "signup": "Sign Up",
+    "login": "Login"
+  },
+  "mobileMenu": {
+    "requestService": "Request Service",
+    "myProfile": "My Profile",
+    "logout": "Logout",
+    "signup": "Sign Up",
+    "login": "Login"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "No notifications at the moment"
+  },
+  "orders": {
+    "columns": {
+      "orderNumber": "Order Number",
+      "requester": "Requester",
+      "provider": "Provider",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "status": "Status",
+      "price": "Project Fee",
+      "action": "Action"
+    },
+    "buttons": {
+      "viewOrder": "View Order"
+    },
+    "tabs": {
+      "all": "All",
+      "waitingForApproval": "Waiting for Approval",
+      "waitingToStart": "Waiting to Start",
+      "ongoing": "Ongoing",
+      "completedService": "Completed Service",
+      "finished": "Finished",
+      "rejected": "Rejected",
+      "expired": "Expired"
+    }
+  },
+  "requestLifecycle": {
+    "title": "Request Lifecycle"
+  },
+  "requestSteps": {
+    "new": "New Request",
+    "newDesc": "Request Received",
+    "priced": "Priced",
+    "payment": "Payment",
+    "paidPending": "Payment Confirmation Pending",
+    "execution": "In Progress",
+    "providerPending": "Waiting for Provider Acceptance",
+    "completed": "Completed"
+  },
+  "rates": {
+    "projectNumber": "Project Number",
+    "projectName": "Project Name",
+    "clientName": "Client Name",
+    "ratingStars": "Rating (Stars)",
+    "clientNotes": "Client Notes"
+  },
+  "AdminAttachmentForm": {
+    "sendPricingFiles": "Send Pricing Files",
+    "uploadAttachments": "Upload attachments",
+    "price": "Price",
+    "enterPrice": "Enter the price",
+    "reject": "Reject",
+    "sendingReject": "Rejecting...",
+    "acceptAndSend": "Approve and Send Attachments",
+    "sendingApproval": "Sending...",
+    "errorRequiredNumber": "Must be a number",
+    "errorPriceRequired": "Price is required when approving",
+    "errorPriceNegative": "Price cannot be negative",
+    "operationSuccess": "Operation completed successfully",
+    "operationError": "An error occurred during the operation"
+  },
+  "AdminCompleteRequest": {
+    "confirmRequest": "Confirm Request",
+    "requestTitle": "Request Title",
+    "enterRequestTitle": "Enter request title",
+    "price": "Price",
+    "enterOrderPrice": "Enter order price",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "provider": "Service Provider",
+    "selectProvider": "Select a provider",
+    "uploadAttachments": "Upload attachments",
+    "confirm": "Confirm",
+    "sending": "Sending...",
+    "operationSuccess": "Operation completed successfully",
+    "operationError": "An error occurred during the operation",
+    "errorRequestTitleRequired": "Request title is required",
+    "errorStartDateRequired": "Start date is required",
+    "errorEndDateRequired": "End date is required",
+    "errorEndDateMin": "End date must be after start date",
+    "errorProviderRequired": "Service provider is required",
+    "errorPriceType": "Price must be a number",
+    "errorPriceRequired": "Price is required",
+    "errorPriceMin": "Price cannot be less than 0"
+  },
+  "RequestAttachment": {
+    "attachments": "Attachments",
+    "serviceRequestFiles": "Service Request Files",
+    "adminPricingFilesForYou": "Your Pricing Files",
+    "adminPricingFilesForAdmin": "Admin’s Pricing Files",
+    "requesterReceiptForYou": "Your Transfer Receipt",
+    "requesterReceiptForRequester": "Requester’s Transfer Receipt",
+    "receiptDetails": "Payment Receipt Details",
+    "file": "File Name",
+    "type": "Content Type",
+    "size": "Size",
+    "uploadedAt": "Uploaded At",
+    "noProviderWarning": "Alert: No provider has been assigned to this request. Accepting the receipt will change the status to 'Paid' but an order/project will NOT be automatically created. Do you want to proceed?",
+    "noRequestContext": "Request data not found",
+    "confirmAccept": "Are you sure you want to accept this receipt?",
+    "acceptFailed": "Failed to accept receipt",
+    "rejectReason": "Enter rejection reason",
+    "rejectFailed": "Failed to reject receipt",
+    "confirmDelete": "Do you want to delete this file?",
+    "deleteFailed": "Failed to delete file"
+  },
+  "attachmentForm": {
+    "title": "Send Transfer Receipt",
+    "uploadPrompt": "Upload attachments",
+    "pricingNotesLabel": "Pricing Notes",
+    "pricingNotesPlaceholder": "Enter pricing notes here",
+    "reject": "Reject",
+    "rejecting": "Rejecting...",
+    "approve": "Approve & Upload Files",
+    "approving": "Submitting...",
+    "success": "Operation completed successfully",
+    "error": "An error occurred during the operation",
+    "pricingNotesRequired": "Pricing notes are required"
+  },
+  "searchPlaceholder": "Search...",
+  "uploadAdminAttachments": {
+    "attachmentsLabel": "Order Attachments",
+    "uploadPrompt": "Upload your attachments",
+    "submitButton": "Complete Order",
+    "completeTask": "Finish Task",
+    "uploadSuccess": "Attachments uploaded successfully",
+    "uploadFailed": "Attachment upload failed",
+    "uploadError": "An error occurred while uploading files",
+    "completeSuccess": "Task completed successfully",
+    "completeError": "An error occurred while completing the task"
+  },
+  "userData": {
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "registrationDate": "Registration Date",
+    "commercialNumber": "Commercial Registration Number",
+    "commercialDate": "Commercial Registration Date",
+    "entityType": "Entity Type",
+    "workRegion": "Work Region"
+  },
+  "suspend": {
+    "title": "Are you sure you want to suspend your account?",
+    "description": "You won't be able to use your account after suspension unless you contact support.",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "loading": "Suspending...",
+    "success": "Account suspended successfully",
+    "error": "An error occurred while suspending the account"
+  },
+  "faqs": {
+    "title": "FAQs",
+    "description": "Here you can find all frequently asked questions"
+  },
+  "homeAdmin": {
+    "title": "Home",
+    "description": "Welcome to Bacura – Admin",
+    "financialTransactions": "Financial Transactions",
+    "requests": "Requests",
+    "users": "Users",
+    "totalUsers": "Users",
+    "requesters": "Requesters",
+    "providers": "Providers",
+    "totalRequests": "All Requests",
+    "newRequest": "New Request",
+    "diagnosis": "Projects Diagnosis",
+    "consultations": "Consultations",
+    "maintenanceContracts": "Maintenance Contracts",
+    "training": "Training",
+    "supervision": "Projects Supervision",
+    "executionContracts": "Execution Contracts",
+    "management": "Projects Management",
+    "wholesale": "Wholesale Supply",
+    "totalAmount": "Total Amount",
+    "consultationAmount": "Consultation Amounts",
+    "otherAmount": "Other"
+  },
+  "ourRates": {
+    "title": "My Ratings",
+    "description": "Here you can find the ratings left by your clients"
+  },
+  "providers": {
+    "stats": {
+      "total": "Total Providers",
+      "pending": "Pending Review",
+      "active": "Active Accounts",
+      "blocked": "Blocked Accounts",
+      "suspended": "Suspended Accounts"
+    },
+    "view": "View",
+    "edit": "Edit",
+    "delete": "Delete",
+    "approve": "Approve",
+    "reject": "Reject",
+    "deleteSuccess": "Provider deleted successfully",
+    "deleteError": "Failed to delete provider",
+    "approveSuccess": "Account approved successfully",
+    "approveError": "Failed to approve account",
+    "rejectSuccess": "Account status updated",
+    "pageTitle": "Service Providers Management",
+    "pageDescription": "Monitor and manage service provider accounts registered on the platform",
+    "empty": "No data to display"
+  },
+  "requestDetails": {
+    "title": "Service Request Details",
+    "nav1": "Requests Management",
+    "nav2": "Request Details",
+    "adminOffer": "Proposed Price Offer",
+    "adminPrice": "Proposed Price",
+    "downloadProposal": "Download Proposal File",
+    "priceProposal": "Proposed Price Offer",
+    "priceProposalDesc": "Please review the price offer and approve it to move to the payment stage and start work",
+    "youRejected": "You have rejected the proposed price",
+    "reason": "Reason",
+    "priceAccepted": "Price Accepted",
+    "waitingPayment": "Waiting for Payment",
+    "sidebarTitle": "Request Data",
+    "sidebarDesc": "Summary of requested service details and information",
+    "actionRequired": "Awaiting Your Final Decision",
+    "isDone": "Has the work been received successfully?",
+    "completeConfirmPrompt": "If you are satisfied with the results, please close the project to move to the evaluation stage",
+    "finishNow": "Finish Project Now",
+    "successComplete": "Project completed successfully",
+    "confirmCompletion": "Are you sure the project is complete and all requirements have been received?",
+    "back": "Back to Requests List"
+  },
+  "rating": {
+    "title": "Rate Your Experience",
+    "subtitle": "Your opinion matters to us in improving the quality of services provided",
+    "selectStars": "Please select a star rating",
+    "success": "Thank you for your rating!",
+    "commentLabel": "Additional Notes",
+    "commentPlaceholder": "Write any notes you'd like to share here...",
+    "submit": "Submit Rating",
+    "thanks": "Thank you for your rating!",
+    "reviewedDesc": "You have already rated this service, your opinion always helps us improve"
+  },
+  "pricing": {
+    "total": "Total Price",
+    "proposal": "Proposal Summary"
+  },
+  "deliverables": {
+    "title": "Project Deliverables & Progress",
+    "subtitle": "Track work progress and download submitted files",
+    "accepted": "Deliverable accepted successfully",
+    "rejected": "Changes requested",
+    "empty": "No deliverables yet",
+    "emptySub": "The service provider will upload files here soon",
+    "rejectReason": "Please write the reason for requesting changes"
+  },
+  "status": {
+    "pending": "Pending",
+    "under_review": "Under Review",
+    "accepted": "Accepted",
+    "rejected": "Rejected"
+  },
+  "requesters": {
+    "stats": {
+      "total": "Total Requesters",
+      "active": "Active Accounts",
+      "blocked": "Blocked Accounts"
+    },
+    "title": "Service Requesters Management",
+    "description": "Monitor and manage service requester accounts registered on the platform",
+    "deleteSuccess": "Account deleted successfully",
+    "deleteError": "Failed to delete account",
+    "blockSuccess": "Account blocked successfully",
+    "unblockSuccess": "Account unblocked successfully",
+    "statusUpdateError": "Failed to update account status"
+  },
+  "requests": {
+    "stats": {
+      "total": "Total Requests",
+      "new": "New Requests",
+      "processing": "Processing",
+      "priced": "Priced Requests",
+      "accepted": "Accepted Requests",
+      "rejected": "Rejected Requests",
+      "completed": "Completed Requests",
+      "waitingPayment": "Waiting for Payment",
+      "paid": "Paid Requests"
+    },
+    "title": "Manage Requests",
+    "description": "Monitor and manage service requests submitted by seekers",
+    "deleteSuccess": "Request deleted successfully",
+    "deleteError": "Failed to delete request"
+  },
+  "requests.actions": {
+    "view": "View",
+    "edit": "Edit",
+    "delete": "Delete",
+    "empty": "No data to display"
+  },
+  "AdminPricingPanel": {
+    "title": "Request Pricing",
+    "price": "Price",
+    "enterPrice": "Enter price",
+    "notes": "Notes",
+    "enterNotes": "Enter notes",
+    "proposalUrl": "Proposal File URL",
+    "enterUrl": "Enter URL",
+    "save": "Save",
+    "cashPayment": "Cash Payment",
+    "markPaidDesc": "Mark request as paid when cash is received",
+    "markAsPaid": "Mark as Paid",
+    "priceType": "Invalid price",
+    "priceRequired": "Enter the price",
+    "urlInvalid": "Invalid URL"
+  },
+  "AdminAssignProvider": {
+    "title": "Assign Service Provider",
+    "providerLabel": "Select a provider for the offer",
+    "providerPlaceholder": "Search for a provider by name...",
+    "priceLabel": "Service Purchase Price",
+    "pricePlaceholder": "Enter the amount the provider will receive...",
+    "submit": "Send Offer to Provider",
+    "update": "Update Offer",
+    "submitting": "Processing...",
+    "success": "Offer sent to provider successfully",
+    "error": "An error occurred while assigning the provider",
+    "providerRequired": "Please select a provider",
+    "priceRequired": "Please enter the price",
+    "priceType": "Price must be a number",
+    "pending": "Waiting for Response",
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "rejectionReason": "Rejection Reason",
+    "assignedStatus": "Assigned Provider",
+    "waitForReceiptApproval": "Wait for admin to approve the receipt before assigning a provider."
+  },
+  "servicesAdmin": {
+    "title": "Manage Services",
+    "description": "Here you can find the requests you have been nominated to handle based on your specialization"
+  },
+  "ticketsDetails": {
+    "title": "Complaint Details",
+    "nav1": "Manage Complaints",
+    "nav2": "Complaint Details"
+  },
+  "userDetails": {
+    "providerDetails": "Provider Details",
+    "requesterDetails": "Requester Details",
+    "manageProviders": "Manage Service Providers",
+    "manageRequesters": "Manage Requesters",
+    "providerStats": "Provider Statistics",
+    "requesterStats": "Requester Statistics",
+    "totalOrders": "Total Orders",
+    "waitingApproval": "Orders Awaiting Approval",
+    "ongoingOrders": "Ongoing Orders",
+    "completedOrders": "Completed Orders",
+    "rejectedOrders": "Rejected Orders",
+    "averageRating": "Average Rating"
+  },
+  "explore": {
+    "metaTitle": "Explore Requests",
+    "metaDescription": "Browse the latest requests."
+  },
+  "home": {
+    "metaTitle": "Home"
+  },
+  "projectDetails": {
+    "title": "Project Details No.",
+    "nav1": "Project Management",
+    "nav2": "Project Details",
+    "projectAttachments": "Project Attachments",
+    "requesterAttachments": "Requester Attachments",
+    "addReview": "Add Review"
+  },
+  "notFound": {
+    "message": "Oops! The page you are looking for does not exist.",
+    "back": "Go back to the homepage"
+  },
+  "activeOrders": {
+    "title": "Available Orders",
+    "description": "Here you can find the orders you've been nominated for based on your specialty"
+  },
+  "providerHome": {
+    "activeOrders.title": "Available Orders",
+    "activeOrders.description": "Here you will find the orders you have been nominated for based on your specialization.",
+    "providerHome.title": "Home Page",
+    "providerHome.description": "Welcome to Bacura – Service Provider",
+    "providerHome.statisticsTitle": "Statistics",
+    "providerHome.totalOrders": "Total Orders",
+    "providerHome.waitingApproval": "Waiting for Approval",
+    "providerHome.waitingStart": "Waiting to Start",
+    "providerHome.ongoing": "Ongoing Orders",
+    "providerHome.completed": "Completed Orders",
+    "providerHome.rejected": "Rejected Orders",
+    "providerHome.serviceCompleted": "Service Completed",
+    "providerHome.expired": "Expired Orders",
+    "providerHome.averageRating": "Average Rating"
+  },
+  "providerProjectsDetails": {
+    "projectDetails": "Project Details #{{number}}",
+    "projectNav1": "Project Management",
+    "projectNav2": "Project Details",
+    "projectDescriptionTitle": "Description",
+    "attachmentsTitle": "Project Attachments",
+    "reject": "Reject",
+    "approve": "Approve",
+    "rejectedStatus": "Rejected",
+    "start": "Start Execution",
+    "complete": "Complete Request"
+  },
+  "formRequest": {
+    "requestTitle": "Start Your Project",
+    "requestDescription": "You can complete your project the way you want through Bacura. Enter the project details, budget, and expected duration to have it reviewed and published for free. Then it will appear on the projects page for freelancers to view and submit their proposals. You can choose the most suitable offer and the freelancer will begin working on your project.",
+    "requestService": "Request a Service",
+    "requiredServices": "Required Services",
+    "descriptionLabel": "Order Description",
+    "descriptionPlaceholder": "Describe the order",
+    "attachmentsLabel": "Order Attachments",
+    "attachmentsPlaceholder": "Upload attachments",
+    "budgetLabel": "Budget",
+    "budgetPlaceholder": "Enter budget",
+    "agreeTerms": "I agree to the",
+    "termsAndConditions": "terms and conditions",
+    "submitButton": "Submit Request",
+    "submitting": "Submitting...",
+    "validation": {
+      "selectAtLeastOne": "At least one service must be selected",
+      "descriptionRequired": "Description is required",
+      "agreeRequired": "You must agree to the terms and conditions",
+      "fileTooLarge": "File size is too large"
+    },
+    "messages": {
+      "successUpload": "Registration and upload completed successfully",
+      "errorUpload": "An error occurred during registration. Please check the data.",
+      "registrationError": "Registration or file upload error:"
+    }
+  },
+  "error": {
+    "boundary": {
+      "title": "An unexpected error occurred",
+      "message": "We're sorry, an unexpected error occurred. Please try again or return to the home page.",
+      "goHome": "Go to Home Page",
+      "reload": "Reload Page",
+      "tryAgain": "Try Again"
+    },
+    "default": "An error occurred"
+  },
+  "loading": {
+    "default": "Loading...",
+    "subtitle": "Please wait",
+    "data": "Loading data...",
+    "saving": "Saving...",
+    "deleting": "Deleting...",
+    "uploading": "Uploading...",
+    "processing": "Processing..."
+  },
+  "common": {
+    "viewAll": "View All",
+    "service": "Service",
+    "date": "Date",
+    "status": "Status",
+    "client": "Client",
+    "provider": "Provider",
+    "noAttachments": "No Attachments",
+    "needHelp": "Need Help?",
+    "supportDesc": "Our support team is available to help you anytime.",
+    "contactSupport": "Contact Support",
+    "reject": "Reject",
+    "accept": "Accept",
+    "download": "Download",
+    "readyToUpload": "Ready to Upload",
+    "delete": "Delete",
+    "files": "Files",
+    "actions": "Actions"
+  },
+  "city": "City",
+  "all": "All",
+  "clearFilters": "Clear Filters",
+  "back": "Back"
+}

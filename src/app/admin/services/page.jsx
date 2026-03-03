@@ -2,17 +2,17 @@
 
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import { FormPageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
+import { TablePageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
 
-const UpsertService = dynamic(() => import("@/components/admin-components/services/UpsertService"), {
-  loading: () => <FormPageSkeleton />,
+const ServicesPage = dynamic(() => import("@/views/admin/services/Services"), {
+  loading: () => <TablePageSkeleton />,
   ssr: false,
 });
 
-export default function EditServicePage() {
+export default function AdminServicesPage() {
   return (
-    <Suspense fallback={<FormPageSkeleton />}>
-      <UpsertService />
+    <Suspense fallback={<TablePageSkeleton />}>
+      <ServicesPage />
     </Suspense>
   );
 }

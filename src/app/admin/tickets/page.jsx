@@ -2,16 +2,17 @@
 
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import { DetailPageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
+import { TablePageSkeleton } from "@/components/shared/skeletons/PageSkeleton";
 
-const TicketsDetails = dynamic(() => import("@/views/admin/tickets/TicketsDetails"), {
-  loading: () => <DetailPageSkeleton />,
+const TicketsPage = dynamic(() => import("@/views/admin/tickets/Tickets"), {
+  loading: () => <TablePageSkeleton />,
+  ssr: false,
 });
 
-export default function AdminTicketDetailsPage({ params: _params }) {
+export default function AdminTicketsPage() {
   return (
-    <Suspense fallback={<DetailPageSkeleton />}>
-      <TicketsDetails />
+    <Suspense fallback={<TablePageSkeleton />}>
+      <TicketsPage />
     </Suspense>
   );
 }

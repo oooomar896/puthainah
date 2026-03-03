@@ -1,0 +1,27 @@
+alter table public.users enable row level security;
+alter table public.providers enable row level security;
+alter table public.requesters enable row level security;
+alter table public.admins enable row level security;
+alter table public.requests enable row level security;
+alter table public.orders enable row level security;
+alter table public.lookup_types enable row level security;
+alter table public.lookup_values enable row level security;
+alter table public.cities enable row level security;
+alter table public.services enable row level security;
+alter table public.project_messages enable row level security;
+alter table public.project_deliverables enable row level security;
+alter table public.status_history enable row level security;
+
+create policy "read users (auth)" on public.users for select using (auth.role() = 'authenticated');
+create policy "read providers (auth)" on public.providers for select using (auth.role() = 'authenticated');
+create policy "read requesters (auth)" on public.requesters for select using (auth.role() = 'authenticated');
+create policy "read admins (auth)" on public.admins for select using (auth.role() = 'authenticated');
+create policy "read requests (auth)" on public.requests for select using (auth.role() = 'authenticated');
+create policy "read orders (auth)" on public.orders for select using (auth.role() = 'authenticated');
+create policy "read lookup_types (auth)" on public.lookup_types for select using (auth.role() = 'authenticated');
+create policy "read lookup_values (auth)" on public.lookup_values for select using (auth.role() = 'authenticated');
+create policy "read cities (auth)" on public.cities for select using (auth.role() = 'authenticated');
+create policy "read services (auth)" on public.services for select using (auth.role() = 'authenticated');
+create policy "read project_messages (auth)" on public.project_messages for select using (auth.role() = 'authenticated');
+create policy "read project_deliverables (auth)" on public.project_deliverables for select using (auth.role() = 'authenticated');
+create policy "read status_history (auth)" on public.status_history for select using (auth.role() = 'authenticated');
