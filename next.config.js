@@ -71,6 +71,9 @@ const nextConfig = {
     return config;
   },
 
+  // Turbopack configuration
+  turbopack: {},
+
   // Experimental features
   experimental: {
     optimizePackageImports: ['lucide-react', 'react-icons'],
