@@ -66,13 +66,13 @@ const Footer = () => {
             <div className="relative w-72 h-32 lg:w-96 lg:h-40 -mr-6">
               <OptimizedImage
                 src={logo}
-                alt="Buthaina Suleiman Platform"
+                alt="Buthaina Business Platform"
                 fill
                 className="object-contain lg:object-right"
               />
             </div>
             <p className="text-base text-gray-400 leading-relaxed max-w-sm font-medium">
-              منصة بثينة سليمان للتصميم الداخلي والأثاث الفاخر. نجسد الرؤى الجمالية في واقع ملموس يحاكي أدق تفاصيل الفخامة والرقي.
+              منصة بثينة أعمال للتصميم الداخلي والأثاث الفاخر. نجسد الرؤى الجمالية في واقع ملموس يحاكي أدق تفاصيل الفخامة والرقي.
             </p>
 
             {/* Socials - Desktop */}

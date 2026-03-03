@@ -231,9 +231,9 @@
     "user_activated_success": "User activated successfully!"
   },
   "about": {
-    "metaTitle": "About Us - Learn About Our Vision and Goals",
-    "metaDescription": "Discover more about our mission, values, and services at our platform dedicated to delivering excellence.",
-    "title": "Who We Are – Buthaina Platform",
+    "metaTitle": "About Us - Buthaina Business",
+    "metaDescription": "Discover more about our mission, values, and services at Buthaina Business dedicated to delivering excellence.",
+    "title": "Who We Are – Buthaina Business",
     "intro": "A Saudi digital platform dedicated to excellence in interior design and luxury furniture manufacturing. We serve government and commercial sectors with innovative design solutions, high-quality production, and professional project management, committed to elegance and international standards.",
     "visionTitle": "Our Vision:",
     "visionText": "To lead nationally in low-current system contracting by enhancing the efficiency and quality of projects according to international standards, in support of Saudi Vision 2030.",
@@ -249,7 +249,7 @@
       "Raise community awareness of the importance of smart technological solutions.",
       "Develop local products that can compete in global markets."
     ],
-    "whyTitle": "Why We Launched Buthaina Platform:",
+    "whyTitle": "Why We Launched Buthaina Business:",
     "whyIntro": "Driven by our belief in partnership with government and commercial entities, and recognizing the market need, we launched the platform for the following reasons:",
     "whyPoints": [
       "The workload in this sector is increasing with Vision 2030.",
@@ -298,7 +298,7 @@
       "Consultations by expert specialists.",
       "Training for engineers, technicians, and administrators."
     ],
-    "more": "More About Buthaina Platform"
+    "more": "More About Buthaina Business"
   },
   "review": {
     "add_review": "Add Review",
@@ -326,7 +326,7 @@
   },
   "faq": "FAQ",
   "hero": {
-    "title": "Buthaina Platform - Luxury Design",
+    "title": "Buthaina Business - Luxury Design",
     "registerNow": "Register Now",
     "requestService": "Request a Service",
     "seeMore": "See More"
@@ -347,13 +347,13 @@
     "signup": "Sign Up"
   },
   "loginContent": {
-    "welcome": "Welcome back to Buthaina Platform",
+    "welcome": "Welcome back to Buthaina Business",
     "subtitle": "Log in to access your account, track your requests, and execute projects.",
     "description": "We provide you with a secure and smooth experience to manage your services and execute your projects with confidence."
   },
   "loginForm": {
     "welcome": "Welcome to",
-    "brand": "Buthaina Platform",
+    "brand": "Buthaina Business",
     "noAccount": "Don't have an account?",
     "createAccount": "Create Account",
     "loginTitle": "Login",
@@ -517,7 +517,7 @@
     "stripeError": "An error occurred creating the payment intent"
   },
   "signup": {
-    "title": "Create a new account at Buthaina Platform",
+    "title": "Create a new account at Buthaina Business",
     "titleProvider": "Join as a Success Partner (Service Provider)",
     "description1": "Create a new account to access our services, track your requests, and execute your projects.",
     "descriptionProvider": "Contribute with us in executing high-quality projects and expand your business horizons.",
@@ -526,7 +526,7 @@
   },
   "signupForm": {
     "welcome": "Welcome to",
-    "appName": "Buthaina Platform",
+    "appName": "Buthaina Business",
     "haveAccount": "Already have an account",
     "login": "Login",
     "title": "Create Account",
@@ -631,7 +631,7 @@
     "cookies": "Cookie Settings",
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
-    "rights": "© 2025 Buthaina Platform. All rights reserved.",
+    "rights": "© 2025 Buthaina Business. All rights reserved.",
     "lastUpdate": "Last Update"
   },
   "headerLanding": {

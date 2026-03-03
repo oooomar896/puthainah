@@ -66,6 +66,6 @@ export default async function RequestsPage() {
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata = {
-  title: 'تصفح الطلبات | منصة بثينة',
+  title: 'تصفح الطلبات | منصة بثينة أعمال',
   description: 'تصفح طلبات الخدمة ومتابعة حالتها',
 };

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import NumberBg from "../../../shared/numberBg/NumberBg";
 import Polygon from "../../../../assets/icons/Polygon.svg";
 // import howImg from "../../../../assets/images/howImg.jpg";
-const howImg = "https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=1600";
+const howImg = "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=1600";
 import HowItWorkList from "./HowItWorkList";
 import { useLocation } from "@/utils/useLocation";
 import { useTranslation } from "react-i18next";

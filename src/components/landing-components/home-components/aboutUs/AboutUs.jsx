@@ -97,7 +97,7 @@ const AboutUs = () => {
 
             <div ref={descRef} className="space-y-8 md:space-y-10">
               <p className="text-gray-400 text-lg md:text-3xl leading-relaxed max-w-4xl font-medium border-r-2 md:border-r-4 border-secondary/20 pr-4 md:pr-8">
-                بثينة سليمان ليست مجرد منصة، بل هي كيان إبداعي يهدف إلى تغيير مفهوم التصميم الداخلي وتصنيع الأثاث الفاخر في المملكة.
+                بثينة أعمال ليست مجرد منصة، بل هي كيان إبداعي يهدف إلى تغيير مفهوم التصميم الداخلي وتصنيع الأثاث الفاخر في المملكة.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 text-right pt-2 md:pt-6">
@@ -136,7 +136,7 @@ const AboutUs = () => {
           <div className="flex-1 relative w-full max-w-lg lg:max-w-none">
             <div className="relative group">
               <div className="relative z-10 w-full aspect-[4/5] rounded-[40px] md:rounded-[60px] overflow-hidden border border-white/5 shadow-3xl">
-                <Image src={bgabout} alt="About Buthaina" fill className="object-cover transition-transform duration-[2000ms] group-hover:scale-110" />
+                <Image src={bgabout} alt="About Buthaina Business" fill className="object-cover transition-transform duration-[2000ms] group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-luxuryBlack via-transparent to-transparent opacity-80"></div>
 
                 {/* Floating Info Overlays - Optimized for mobile */}

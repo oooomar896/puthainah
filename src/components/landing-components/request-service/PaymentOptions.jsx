@@ -226,7 +226,7 @@ export default function PaymentOptions({ amount, requestId, attachmentsGroupKey,
                 <div className="flex justify-between items-center text-sm relative z-10 border-t border-gray-50 pt-4">
                   <span className="text-gray-400 font-bold">{tr("payment.accName", "اسم الحساب")}:</span>
                   <div className="flex flex-col items-end">
-                    <span className="font-black text-gray-900">مؤسسة بثينة سليمان للتصميم</span>
+                    <span className="font-black text-gray-900">بثينة أعمال</span>
                   </div>
                 </div>
                 <div className="flex justify-between items-center text-sm relative z-10 border-t border-gray-50 pt-4">

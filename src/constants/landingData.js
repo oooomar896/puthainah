@@ -26,9 +26,9 @@ export const DEFAULT_CUSTOMERS = [
 
 export const DEFAULT_FAQS = [
     {
-        question_ar: "ما هي الخدمات التي تقدمها منصة بثينة؟",
+        question_ar: "ما هي الخدمات التي تقدمها منصة بثينة أعمال؟",
         answer_ar: "نقدم خدمات متكاملة تشمل التصميم الداخلي، التوريد والتصنيع، التأثيث، وإدارة المشاريع بجودة عالية ومعايير عالمية.",
-        question_en: "What services does Buthaina Platform offer?",
+        question_en: "What services does Buthaina Business offer?",
         answer_en: "We offer integrated services including interior design, supply and manufacturing, furnishing, and project management with high quality and international standards.",
         is_active: true
     },

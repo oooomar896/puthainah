@@ -10,8 +10,8 @@ const buildTime = process.env.NEXT_PUBLIC_BUILD_TIME || new Date().toISOString()
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
-  title: "Buthaina Platform - منصة بثينة",
-  description: "المنصة الرائدة في التصميم الداخلي وصناعة الأثاث الفاخر - Buthaina Platform for Interior Design",
+  title: "Buthaina Business - منصة بثينة أعمال",
+  description: "المنصة الرائدة في التصميم الداخلي وصناعة الأثاث الفاخر - Buthaina Business for Interior Design",
   icons: {
     icon: "/vite.png",
     shortcut: "/vite.png",
