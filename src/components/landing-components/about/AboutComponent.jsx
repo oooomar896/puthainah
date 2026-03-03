@@ -38,7 +38,7 @@ const AboutComponent = () => {
 
             {/* Values */}
             <div className="space-y-4 bg-secondary/5 p-8 rounded-3xl border border-secondary/20">
-              <h3 className="text-white font-black text-2xl md:text-3xl">{t("about.valuesTitle")}</h3>
+              <h3 className="text-secondary font-black text-2xl md:text-3xl">{t("about.valuesTitle")}</h3>
               <p className="text-base md:text-xl opacity-80">{t("about.valuesText")}</p>
             </div>
 
