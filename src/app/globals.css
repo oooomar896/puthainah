@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for Next.js app */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* Force light scheme globally */
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-end-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Remove automatic dark mode */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-primary;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply outline-none focus:ring-2 focus:ring-primary;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition shadow-btn;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90 disabled:opacity-60;
+  }
+
+  .btn-blue {
+    @apply bg-primary text-white hover:bg-primary/90 disabled:opacity-60;
+  }
+
+  .btn-yellow {
+    @apply bg-secondary text-white hover:bg-secondary/90 disabled:opacity-60;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 disabled:opacity-60;
+  }
+
+  .btn-ghost {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200 disabled:opacity-60;
+  }
+
+  .input {
+    @apply w-full border border-gray-300 rounded-lg px-3 py-2 text-sm;
+  }
+
+  .input-search {
+    @apply pr-10;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white p-5 shadow-custom;
+  }
+
+  .modal {
+    @apply bg-white rounded-xl p-6 shadow-lg;
+  }
+
+  /* Premium Design System Extensions */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  }
+
+  .premium-gradient-primary {
+    background: linear-gradient(135deg, #1967AE 0%, #114a7e 100%);
+  }
+
+  .premium-gradient-secondary {
+    background: linear-gradient(135deg, #F3BF45 0%, #d4a02c 100%);
+  }
+
+  .premium-gradient-success {
+    background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+  }
+
+  .premium-gradient-warning {
+    background: linear-gradient(135deg, #F3BF45 0%, #D97706 100%);
+  }
+
+  .premium-shadow {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .shimmer-text {
+    background: linear-gradient(90deg, #1967AE, #60A5FA, #1967AE);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 2s linear infinite;
+  }
+
+  @keyframes shimmer {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  /* Better Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+  }
+}

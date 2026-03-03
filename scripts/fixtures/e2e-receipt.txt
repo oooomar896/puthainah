@@ -1,0 +1,2 @@
+E2E UI receipt test file
+Generated for Playwright test

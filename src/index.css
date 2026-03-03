@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Patrick+Hand&display=swap');
+@import url('https://fonts.cdnfonts.com/css/neo-sans-arabic');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dir-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.dir-ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+body {
+  font-family: 'Neo Sans Arabic', 'Noto Sans Arabic', sans-serif;
+  overflow-x: hidden;
+  background-color: #FCFBFC;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* في حالة دعم اللغة الإنجليزية */
+html[dir="ltr"] body {
+  font-family: 'Neo Sans Arabic', sans-serif;
+}
+
+/* تخصيص الـ thumb لمتصفحات Webkit */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #E2B13C;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* تخصيص الـ thumb لمتصفحات Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #E2B13C;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main {
+  overflow: hidden;
+}
+
+/* بعد استيراد swiper/css و swiper/css/pagination */
+/* تجاوز الوضع الافتراضي للباجينيشن الراسي */
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets {
+  right: auto !important;
+  /* إزالة القيمة الافتراضية */
+  left: 2.5rem !important;
+  /* ضبّط المسافة من الجانب الأيسر حسب الحاجة */
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: .3;
+  }
+}
+
+.blink {
+  animation: blink 1s step-start infinite;
+}
+
+/* Custom Scrollbar for Sidebar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Safe area padding */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Premium Gradients */
+.premium-gradient-primary {
+  background: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
+  background-size: 200% 200%;
+}
+
+.premium-gradient-secondary {
+  background: linear-gradient(135deg, #E2B13C 0%, #B8860B 100%);
+  background-size: 200% 200%;
+}
+
+.premium-gradient-warning {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  background-size: 200% 200%;
+}
+
+.premium-gradient-success {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  background-size: 200% 200%;
+}
+
+.shadow-premium {
+  box-shadow: 0 10px 25px -5px rgba(26, 26, 26, 0.3);
+}
+
+.shadow-premium-secondary {
+  box-shadow: 0 10px 25px -5px rgba(226, 177, 60, 0.3);
+}
+
+/* Merged from globals.css */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition shadow-btn;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90 disabled:opacity-60;
+  }
+
+  .btn-blue {
+    @apply bg-primary text-white hover:bg-primary/90 disabled:opacity-60;
+  }
+
+  .btn-yellow {
+    @apply bg-secondary text-white hover:bg-secondary/90 disabled:opacity-60;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 disabled:opacity-60;
+  }
+
+  .btn-ghost {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200 disabled:opacity-60;
+  }
+
+  .input {
+    @apply w-full border border-gray-300 rounded-lg px-3 py-2 text-sm;
+  }
+
+  .input-search {
+    @apply pr-10;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white p-5 shadow-custom;
+  }
+
+  .modal {
+    @apply bg-white rounded-xl p-6 shadow-lg;
+  }
+
+  /* Premium Design System Extensions */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .shimmer-text {
+    background: linear-gradient(90deg, #FFFFFF 0%, #E2B13C 50%, #FFFFFF 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer-gold 4s linear infinite;
+  }
+
+  @keyframes shimmer-gold {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .animate-ken-burns {
+    animation: ken-burns 20s ease infinite alternate;
+  }
+
+  @keyframes ken-burns {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+
+    100% {
+      transform: scale(1.15) translate(-2%, -2%);
+    }
+  }
+
+  .animate-parallax-scroll {
+    animation: parallax-scroll 2.5s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+  }
+
+  @keyframes parallax-scroll {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+}
