@@ -97,10 +97,10 @@ const AboutUs = () => {
 
             <div ref={descRef} className="space-y-8 md:space-y-10">
               <p className="text-gray-400 text-lg md:text-3xl leading-relaxed max-w-4xl font-medium border-r-2 md:border-r-4 border-secondary/20 pr-4 md:pr-8">
-                بثينة أعمال ليست مجرد منصة، بل هي كيان إبداعي يهدف إلى تغيير مفهوم التصميم الداخلي وتصنيع الأثاث الفاخر في المملكة.
+                {t("about.intro")}
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 text-right pt-2 md:pt-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 text-right pt-2 md:pt-6">
                 <div className="group p-6 md:p-8 bg-white/[0.03] border border-white/10 rounded-[24px] md:rounded-[32px] transition-all hover:bg-white/[0.07] duration-500">
                   <h4 className="text-secondary font-black text-3xl md:text-5xl mb-1 md:mb-3 tracking-tighter">+100</h4>
                   <p className="text-gray-400 text-base md:text-lg font-bold">مشروع فريد</p>
@@ -108,6 +108,10 @@ const AboutUs = () => {
                 <div className="group p-6 md:p-8 bg-secondary/[0.03] border border-secondary/10 rounded-[24px] md:rounded-[32px] transition-all hover:bg-secondary/[0.07] duration-500">
                   <h4 className="text-white font-black text-3xl md:text-5xl mb-1 md:mb-3 tracking-tighter">+15</h4>
                   <p className="text-secondary font-bold text-base md:text-lg">عام من الإبداع</p>
+                </div>
+                <div className="group p-6 md:p-8 bg-white/[0.03] border border-white/10 rounded-[24px] md:rounded-[32px] transition-all hover:bg-white/[0.07] duration-500 sm:col-span-2 lg:col-span-1">
+                  <h4 className="text-secondary font-black text-3xl md:text-5xl mb-1 md:mb-3 tracking-tighter">100%</h4>
+                  <p className="text-gray-400 text-base md:text-lg font-bold">رضا عملائنا</p>
                 </div>
               </div>
             </div>

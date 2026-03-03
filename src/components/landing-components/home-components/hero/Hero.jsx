@@ -11,6 +11,8 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
+import { Palette, Hammer, Sofa } from "lucide-react";
+
 const Hero = () => {
   const { t } = useTranslation();
   const role = useSelector((state) => state.auth.role);
@@ -18,6 +20,7 @@ const Hero = () => {
   const textRef = useRef(null);
   const subTextRef = useRef(null);
   const btnRef = useRef(null);
+  const pillarsRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -35,16 +38,29 @@ const Hero = () => {
           duration: 1,
           ease: "power3.out",
         }, "-=0.6")
+        .from(pillarsRef.current.children, {
+          y: 30,
+          opacity: 0,
+          stagger: 0.15,
+          duration: 0.8,
+          ease: "power3.out",
+        }, "-=0.4")
         .from(btnRef.current, {
           y: 30,
           opacity: 0,
           duration: 1,
           ease: "power3.out",
-        }, "-=0.4");
+        }, "-=0.6");
     }, heroRef);
 
     return () => ctx.revert();
   }, []);
+
+  const servicePillars = [
+    { icon: <Palette className="w-5 h-5 md:w-8 md:h-8" />, label: "تصميم" },
+    { icon: <Hammer className="w-5 h-5 md:w-8 md:h-8" />, label: "تنفيذ" },
+    { icon: <Sofa className="w-5 h-5 md:w-8 md:h-8" />, label: "أثاث" },
+  ];
 
   return (
     <section ref={heroRef} className="relative w-full h-[100vh] min-h-[800px] overflow-hidden bg-luxuryBlack grain-bg">
@@ -89,6 +105,24 @@ const Hero = () => {
                   <p className="text-gray-400 text-lg md:text-3xl leading-relaxed font-medium border-r-2 md:border-r-4 border-secondary/50 pr-4 md:pr-8">
                     نحن لا نصمم مجرد مساحات، بل نصنع تجارب حياتية استثنائية تعكس ذوقكم الرفيع وتحول الأحلام إلى واقع ملموس.
                   </p>
+                </div>
+
+                {/* Service Pillars Grid - Responsive & Visually Bold */}
+                <div
+                  ref={pillarsRef}
+                  className="flex flex-wrap justify-center md:justify-end gap-3 md:gap-6 pt-8 z-30"
+                >
+                  {servicePillars.map((pillar, idx) => (
+                    <div
+                      key={idx}
+                      className="group flex flex-col items-center justify-center gap-2 md:gap-3 w-28 h-28 md:w-40 md:h-40 bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[2rem] md:rounded-[3rem] transition-all duration-700 hover:bg-secondary/20 hover:border-secondary/50 hover:-translate-y-3 cursor-default shadow-2xl"
+                    >
+                      <div className="text-secondary group-hover:scale-125 transition-transform duration-500">
+                        {pillar.icon}
+                      </div>
+                      <span className="text-white font-black text-sm md:text-xl tracking-widest">{pillar.label}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
 
