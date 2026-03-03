@@ -103,7 +103,7 @@ const Hero = () => {
 
                 <div ref={subTextRef} className="max-w-2xl ml-auto">
                   <p className="text-gray-400 text-lg md:text-3xl leading-relaxed font-medium border-r-2 md:border-r-4 border-secondary/50 pr-4 md:pr-8">
-                    نحن لا نصمم مجرد مساحات، بل نصنع تجارب حياتية استثنائية تعكس ذوقكم الرفيع وتحول الأحلام إلى واقع ملموس.
+                    نعمل بمهنية ومعايير عالمية في التصميم الداخلي وصناعة الأثاث ؛ ليرى شركائنا جودة الحياة على طبيعتها .
                   </p>
                 </div>
 
